@@ -1,0 +1,22 @@
+[
+    {
+        "op": "addmerge",
+        "path": "/behaviors",
+        "value": [
+            {
+                "name": "WaterHarvestable"
+            }
+        ],
+        "file": "game:blocktypes/plant/fruitingbush.json"
+    },
+    {
+        "op": "addmerge",
+        "path": "/entityBehaviors",
+        "value": [
+            {
+                "name": "WaterHarvestable"
+            }
+        ],
+        "file": "game:blocktypes/plant/fruitingbush.json"
+    }
+]
