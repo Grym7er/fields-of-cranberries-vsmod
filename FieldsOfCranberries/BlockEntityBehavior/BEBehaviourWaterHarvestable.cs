@@ -112,6 +112,7 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
                     Pos
                 );
             });
+            Api.World.PlaySoundAt(bhBush.HarvestingSound, Pos, 0);
 
             setGrowthState(EnumFruitingBushGrowthState.Mature);
             return;
