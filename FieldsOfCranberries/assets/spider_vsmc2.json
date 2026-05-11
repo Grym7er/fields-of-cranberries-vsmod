@@ -1,0 +1,3880 @@
+{
+  "editor": {
+    "entityTextureMode": true
+  },
+  "textures": {},
+  "elements": [
+    {
+      "name": "origin",
+      "from": [
+        8.0,
+        1.0,
+        8.0
+      ],
+      "to": [
+        8.0,
+        1.0,
+        8.0
+      ],
+      "shade": true,
+      "faces": {},
+      "rotationOrigin": [
+        8.0,
+        1.0,
+        8.0
+      ],
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "scaleZ": 1.0,
+      "renderPass": -1,
+      "renderInEditor": true,
+      "uv": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "thorax",
+      "from": [
+        6.75,
+        0.25,
+        7.0
+      ],
+      "to": [
+        8.25,
+        1.25,
+        9.0
+      ],
+      "shade": true,
+      "faces": {
+        "north": {
+          "texture": "#null",
+          "uv": [
+            0.0,
+            2.0,
+            1.5,
+            3.0
+          ],
+          "enabled": true
+        },
+        "east": {
+          "texture": "#null",
+          "uv": [
+            1.5,
+            2.0,
+            3.5,
+            3.0
+          ],
+          "enabled": true
+        },
+        "south": {
+          "texture": "#null",
+          "uv": [
+            3.5,
+            2.0,
+            5.0,
+            3.0
+          ],
+          "enabled": true
+        },
+        "west": {
+          "texture": "#null",
+          "uv": [
+            5.0,
+            2.0,
+            7.0,
+            3.0
+          ],
+          "enabled": true
+        },
+        "up": {
+          "texture": "#null",
+          "uv": [
+            0.0,
+            0.0,
+            1.5,
+            2.0
+          ],
+          "enabled": true
+        },
+        "down": {
+          "texture": "#null",
+          "uv": [
+            1.5,
+            0.0,
+            3.0,
+            2.0
+          ],
+          "enabled": true
+        }
+      },
+      "rotationOrigin": [
+        8.25,
+        1.25,
+        8.0
+      ],
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "scaleZ": 1.0,
+      "renderPass": -1,
+      "children": [
+        {
+          "name": "head",
+          "from": [
+            -0.5,
+            0.25,
+            0.55
+          ],
+          "to": [
+            0.19999998807907104,
+            1.0,
+            1.55
+          ],
+          "shade": true,
+          "faces": {
+            "north": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                1.0,
+                0.5,
+                1.5
+              ],
+              "enabled": true
+            },
+            "east": {
+              "texture": "#null",
+              "uv": [
+                0.5,
+                1.0,
+                1.5,
+                1.5
+              ],
+              "enabled": true
+            },
+            "south": {
+              "texture": "#null",
+              "uv": [
+                1.5,
+                1.0,
+                2.0,
+                1.5
+              ],
+              "enabled": true
+            },
+            "west": {
+              "texture": "#null",
+              "uv": [
+                2.0,
+                1.0,
+                3.0,
+                1.5
+              ],
+              "enabled": true
+            },
+            "up": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                0.0,
+                0.5,
+                1.0
+              ],
+              "enabled": true
+            },
+            "down": {
+              "texture": "#null",
+              "uv": [
+                0.5,
+                0.0,
+                1.0,
+                1.0
+              ],
+              "enabled": true
+            }
+          },
+          "rotationOrigin": [
+            0.0,
+            1.025,
+            1.05
+          ],
+          "rotationZ": -10.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "scaleZ": 1.0,
+          "renderPass": -1,
+          "children": [
+            {
+              "name": "eye-big-left",
+              "from": [
+                -0.05000000074505806,
+                0.40000000596046448,
+                0.60000002384185791
+              ],
+              "to": [
+                0.19999999925494194,
+                0.60000000894069672,
+                0.80000002682209015
+              ],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#texture",
+                  "uv": [
+                    1.0,
+                    0.5,
+                    1.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#texture",
+                  "uv": [
+                    1.5,
+                    0.5,
+                    2.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    0.5
+                  ],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.5,
+                    0.0,
+                    1.0,
+                    0.5
+                  ],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin": [
+                -0.05000000074505806,
+                0.40000000596046448,
+                0.60000002384185791
+              ],
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "renderInEditor": true,
+              "uv": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "name": "eye-big-right",
+              "from": [
+                -0.05000000074505806,
+                0.40000000596046448,
+                0.20000000298023224
+              ],
+              "to": [
+                0.19999999925494194,
+                0.60000000894069672,
+                0.40000000596046448
+              ],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#texture",
+                  "uv": [
+                    1.0,
+                    0.5,
+                    1.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#texture",
+                  "uv": [
+                    1.5,
+                    0.5,
+                    2.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    0.5
+                  ],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.5,
+                    0.0,
+                    1.0,
+                    0.5
+                  ],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin": [
+                -0.05000000074505806,
+                0.40000000596046448,
+                0.20000000298023224
+              ],
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "renderInEditor": true,
+              "uv": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "name": "eye-small-1",
+              "from": [
+                -0.05000000074505806,
+                0.20000000298023224,
+                0.75
+              ],
+              "to": [
+                0.19999999925494194,
+                0.30000000447034836,
+                0.85000000149011612
+              ],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#texture",
+                  "uv": [
+                    1.0,
+                    0.5,
+                    1.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#texture",
+                  "uv": [
+                    1.5,
+                    0.5,
+                    2.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    0.5
+                  ],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.5,
+                    0.0,
+                    1.0,
+                    0.5
+                  ],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin": [
+                -0.05000000074505806,
+                0.20000000298023224,
+                0.75
+              ],
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "renderInEditor": true,
+              "uv": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "name": "eye-small-2",
+              "from": [
+                -0.05000000074505806,
+                0.20000000298023224,
+                0.550000011920929
+              ],
+              "to": [
+                0.19999999925494194,
+                0.30000000447034836,
+                0.65000001341104507
+              ],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#texture",
+                  "uv": [
+                    1.0,
+                    0.5,
+                    1.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#texture",
+                  "uv": [
+                    1.5,
+                    0.5,
+                    2.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    0.5
+                  ],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.5,
+                    0.0,
+                    1.0,
+                    0.5
+                  ],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin": [
+                -0.05000000074505806,
+                0.20000000298023224,
+                0.550000011920929
+              ],
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "renderInEditor": true,
+              "uv": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "name": "eye-small-3",
+              "from": [
+                -0.05000000074505806,
+                0.20000000298023224,
+                0.34999999403953552
+              ],
+              "to": [
+                0.19999999925494194,
+                0.30000000447034836,
+                0.44999999552965164
+              ],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#texture",
+                  "uv": [
+                    1.0,
+                    0.5,
+                    1.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#texture",
+                  "uv": [
+                    1.5,
+                    0.5,
+                    2.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    0.5
+                  ],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.5,
+                    0.0,
+                    1.0,
+                    0.5
+                  ],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin": [
+                -0.05000000074505806,
+                0.20000000298023224,
+                0.34999999403953552
+              ],
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "renderInEditor": true,
+              "uv": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "name": "eye-small-4",
+              "from": [
+                -0.05000000074505806,
+                0.20000000298023224,
+                0.15000000596046448
+              ],
+              "to": [
+                0.19999999925494194,
+                0.30000000447034836,
+                0.2500000074505806
+              ],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#texture",
+                  "uv": [
+                    1.0,
+                    0.5,
+                    1.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#texture",
+                  "uv": [
+                    1.5,
+                    0.5,
+                    2.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    0.5
+                  ],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.5,
+                    0.0,
+                    1.0,
+                    0.5
+                  ],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin": [
+                -0.05000000074505806,
+                0.20000000298023224,
+                0.15000000596046448
+              ],
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "renderInEditor": true,
+              "uv": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "name": "fang-left",
+              "from": [
+                -0.20000000298023224,
+                -0.5,
+                0.550000011920929
+              ],
+              "to": [
+                0.049999997019767761,
+                0.10000002384185791,
+                0.95000001788139343
+              ],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#texture",
+                  "uv": [
+                    1.0,
+                    0.5,
+                    1.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#texture",
+                  "uv": [
+                    1.5,
+                    0.5,
+                    2.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    0.5
+                  ],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.5,
+                    0.0,
+                    1.0,
+                    0.5
+                  ],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin": [
+                -0.20000000298023224,
+                1.1175870895385742E-08,
+                0.75
+              ],
+              "rotationZ": 15.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "renderInEditor": true,
+              "uv": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "name": "fang-left (2)",
+              "from": [
+                -0.20000000298023224,
+                -0.5,
+                0.05000000074505806
+              ],
+              "to": [
+                0.049999997019767761,
+                0.10000002384185791,
+                0.45000000670552254
+              ],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#texture",
+                  "uv": [
+                    1.0,
+                    0.5,
+                    1.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#texture",
+                  "uv": [
+                    1.5,
+                    0.5,
+                    2.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    0.5
+                  ],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#texture",
+                  "uv": [
+                    0.5,
+                    0.0,
+                    1.0,
+                    0.5
+                  ],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin": [
+                -0.20000000298023224,
+                1.1175870895385742E-08,
+                0.2499999888241291
+              ],
+              "rotationZ": 15.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "renderInEditor": true,
+              "uv": [
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "renderInEditor": true,
+          "uv": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "leg-left-1",
+          "from": [
+            0.0,
+            0.1,
+            1.8
+          ],
+          "to": [
+            0.4,
+            0.5,
+            3.8
+          ],
+          "shade": true,
+          "faces": {
+            "north": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                2.0,
+                0.5,
+                2.5
+              ],
+              "enabled": true
+            },
+            "east": {
+              "texture": "#null",
+              "uv": [
+                0.5,
+                2.0,
+                2.5,
+                2.5
+              ],
+              "enabled": true
+            },
+            "south": {
+              "texture": "#null",
+              "uv": [
+                2.5,
+                2.0,
+                3.0,
+                2.5
+              ],
+              "enabled": true
+            },
+            "west": {
+              "texture": "#null",
+              "uv": [
+                3.0,
+                2.0,
+                5.0,
+                2.5
+              ],
+              "enabled": true
+            },
+            "up": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                0.0,
+                0.5,
+                2.0
+              ],
+              "enabled": true
+            },
+            "down": {
+              "texture": "#null",
+              "uv": [
+                0.5,
+                0.0,
+                1.0,
+                2.0
+              ],
+              "enabled": true
+            }
+          },
+          "rotationOrigin": [
+            0.2,
+            0.5,
+            1.8
+          ],
+          "rotationX": -30.0,
+          "rotationY": -45.0,
+          "rotationZ": -22.5,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "scaleZ": 1.0,
+          "renderPass": -1,
+          "children": [
+            {
+              "name": "leg-left-1-1",
+              "from": [
+                0.05,
+                0.0,
+                2.2
+              ],
+              "to": [
+                0.35,
+                0.3,
+                3.4
+              ],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    1.0,
+                    0.5,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    1.0,
+                    1.5,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#null",
+                  "uv": [
+                    1.5,
+                    1.0,
+                    2.0,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#null",
+                  "uv": [
+                    2.0,
+                    1.0,
+                    3.0,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin": [
+                0.2,
+                0.3,
+                2.2
+              ],
+              "rotationX": 67.5,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "children": [
+                {
+                  "name": "leg-left-1-2",
+                  "from": [
+                    0.0,
+                    0.0,
+                    1.2
+                  ],
+                  "to": [
+                    0.3,
+                    0.3,
+                    1.7
+                  ],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.5,
+                        0.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "east": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "south": {
+                      "texture": "#null",
+                      "uv": [
+                        1.0,
+                        0.5,
+                        1.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "west": {
+                      "texture": "#null",
+                      "uv": [
+                        1.5,
+                        0.5,
+                        2.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "up": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.0,
+                        0.5,
+                        0.5
+                      ],
+                      "enabled": true
+                    },
+                    "down": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.0,
+                        1.0,
+                        0.5
+                      ],
+                      "enabled": true
+                    }
+                  },
+                  "rotationOrigin": [
+                    0.15,
+                    0.3,
+                    1.2
+                  ],
+                  "rotationX": 22.5,
+                  "scaleX": 1.0,
+                  "scaleY": 1.0,
+                  "scaleZ": 1.0,
+                  "renderPass": -1,
+                  "renderInEditor": true,
+                  "uv": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "renderInEditor": true,
+              "uv": [
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "renderInEditor": true,
+          "uv": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "leg-left-2",
+          "from": [
+            0.4,
+            -0.1,
+            1.5
+          ],
+          "to": [
+            0.8,
+            0.3,
+            3.5
+          ],
+          "shade": true,
+          "faces": {
+            "north": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                2.0,
+                0.5,
+                2.5
+              ],
+              "enabled": true
+            },
+            "east": {
+              "texture": "#null",
+              "uv": [
+                0.5,
+                2.0,
+                2.5,
+                2.5
+              ],
+              "enabled": true
+            },
+            "south": {
+              "texture": "#null",
+              "uv": [
+                2.5,
+                2.0,
+                3.0,
+                2.5
+              ],
+              "enabled": true
+            },
+            "west": {
+              "texture": "#null",
+              "uv": [
+                3.0,
+                2.0,
+                5.0,
+                2.5
+              ],
+              "enabled": true
+            },
+            "up": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                0.0,
+                0.5,
+                2.0
+              ],
+              "enabled": true
+            },
+            "down": {
+              "texture": "#null",
+              "uv": [
+                0.5,
+                0.0,
+                1.0,
+                2.0
+              ],
+              "enabled": true
+            }
+          },
+          "rotationOrigin": [
+            0.6,
+            0.3,
+            1.5
+          ],
+          "rotationX": -30.0,
+          "rotationY": -22.5,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "scaleZ": 1.0,
+          "renderPass": -1,
+          "children": [
+            {
+              "name": "leg-left-2-1",
+              "from": [
+                0.05,
+                0.0,
+                2.2
+              ],
+              "to": [
+                0.35,
+                0.3,
+                3.6
+              ],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    1.0,
+                    0.5,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    1.0,
+                    1.5,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#null",
+                  "uv": [
+                    1.5,
+                    1.0,
+                    2.0,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#null",
+                  "uv": [
+                    2.0,
+                    1.0,
+                    3.0,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin": [
+                0.2,
+                0.3,
+                2.2
+              ],
+              "rotationX": 67.5,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "children": [
+                {
+                  "name": "leg-left-2-2",
+                  "from": [
+                    0.0,
+                    0.0,
+                    1.4
+                  ],
+                  "to": [
+                    0.3,
+                    0.3,
+                    2.0
+                  ],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.5,
+                        0.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "east": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "south": {
+                      "texture": "#null",
+                      "uv": [
+                        1.0,
+                        0.5,
+                        1.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "west": {
+                      "texture": "#null",
+                      "uv": [
+                        1.5,
+                        0.5,
+                        2.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "up": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.0,
+                        0.5,
+                        0.5
+                      ],
+                      "enabled": true
+                    },
+                    "down": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.0,
+                        1.0,
+                        0.5
+                      ],
+                      "enabled": true
+                    }
+                  },
+                  "rotationOrigin": [
+                    0.15,
+                    0.3,
+                    1.4
+                  ],
+                  "rotationX": 22.5,
+                  "scaleX": 1.0,
+                  "scaleY": 1.0,
+                  "scaleZ": 1.0,
+                  "renderPass": -1,
+                  "renderInEditor": true,
+                  "uv": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "renderInEditor": true,
+              "uv": [
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "renderInEditor": true,
+          "uv": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "leg-left-3",
+          "from": [
+            0.7,
+            -0.1,
+            1.5
+          ],
+          "to": [
+            1.1,
+            0.3,
+            3.5
+          ],
+          "shade": true,
+          "faces": {
+            "north": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                2.0,
+                0.5,
+                2.5
+              ],
+              "enabled": true
+            },
+            "east": {
+              "texture": "#null",
+              "uv": [
+                0.5,
+                2.0,
+                2.5,
+                2.5
+              ],
+              "enabled": true
+            },
+            "south": {
+              "texture": "#null",
+              "uv": [
+                2.5,
+                2.0,
+                3.0,
+                2.5
+              ],
+              "enabled": true
+            },
+            "west": {
+              "texture": "#null",
+              "uv": [
+                3.0,
+                2.0,
+                5.0,
+                2.5
+              ],
+              "enabled": true
+            },
+            "up": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                0.0,
+                0.5,
+                2.0
+              ],
+              "enabled": true
+            },
+            "down": {
+              "texture": "#null",
+              "uv": [
+                0.5,
+                0.0,
+                1.0,
+                2.0
+              ],
+              "enabled": true
+            }
+          },
+          "rotationOrigin": [
+            0.9,
+            0.3,
+            1.5
+          ],
+          "rotationX": -30.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "scaleZ": 1.0,
+          "renderPass": -1,
+          "children": [
+            {
+              "name": "leg-left-3-1",
+              "from": [
+                0.05,
+                0.0,
+                2.2
+              ],
+              "to": [
+                0.35,
+                0.3,
+                3.6
+              ],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    1.0,
+                    0.5,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    1.0,
+                    1.5,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#null",
+                  "uv": [
+                    1.5,
+                    1.0,
+                    2.0,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#null",
+                  "uv": [
+                    2.0,
+                    1.0,
+                    3.0,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin": [
+                0.2,
+                0.3,
+                2.2
+              ],
+              "rotationX": 70.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "children": [
+                {
+                  "name": "leg-left-3-2",
+                  "from": [
+                    0.0,
+                    0.0,
+                    1.4
+                  ],
+                  "to": [
+                    0.3,
+                    0.3,
+                    2.0
+                  ],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.5,
+                        0.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "east": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "south": {
+                      "texture": "#null",
+                      "uv": [
+                        1.0,
+                        0.5,
+                        1.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "west": {
+                      "texture": "#null",
+                      "uv": [
+                        1.5,
+                        0.5,
+                        2.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "up": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.0,
+                        0.5,
+                        0.5
+                      ],
+                      "enabled": true
+                    },
+                    "down": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.0,
+                        1.0,
+                        0.5
+                      ],
+                      "enabled": true
+                    }
+                  },
+                  "rotationOrigin": [
+                    0.15,
+                    0.3,
+                    1.4
+                  ],
+                  "rotationX": 22.5,
+                  "scaleX": 1.0,
+                  "scaleY": 1.0,
+                  "scaleZ": 1.0,
+                  "renderPass": -1,
+                  "renderInEditor": true,
+                  "uv": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "renderInEditor": true,
+              "uv": [
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "renderInEditor": true,
+          "uv": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "leg-left-4",
+          "from": [
+            1.0,
+            0.0,
+            1.5
+          ],
+          "to": [
+            1.4,
+            0.4,
+            3.5
+          ],
+          "shade": true,
+          "faces": {
+            "north": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                2.0,
+                0.5,
+                2.5
+              ],
+              "enabled": true
+            },
+            "east": {
+              "texture": "#null",
+              "uv": [
+                0.5,
+                2.0,
+                2.5,
+                2.5
+              ],
+              "enabled": true
+            },
+            "south": {
+              "texture": "#null",
+              "uv": [
+                2.5,
+                2.0,
+                3.0,
+                2.5
+              ],
+              "enabled": true
+            },
+            "west": {
+              "texture": "#null",
+              "uv": [
+                3.0,
+                2.0,
+                5.0,
+                2.5
+              ],
+              "enabled": true
+            },
+            "up": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                0.0,
+                0.5,
+                2.0
+              ],
+              "enabled": true
+            },
+            "down": {
+              "texture": "#null",
+              "uv": [
+                0.5,
+                0.0,
+                1.0,
+                2.0
+              ],
+              "enabled": true
+            }
+          },
+          "rotationOrigin": [
+            1.2,
+            0.4,
+            1.5
+          ],
+          "rotationX": -22.5,
+          "rotationY": 22.5,
+          "rotationZ": 22.5,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "scaleZ": 1.0,
+          "renderPass": -1,
+          "children": [
+            {
+              "name": "leg-left-4-1",
+              "from": [
+                0.05,
+                0.0,
+                2.2
+              ],
+              "to": [
+                0.35,
+                0.3,
+                3.4
+              ],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    1.0,
+                    0.5,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    1.0,
+                    1.5,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#null",
+                  "uv": [
+                    1.5,
+                    1.0,
+                    2.0,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#null",
+                  "uv": [
+                    2.0,
+                    1.0,
+                    3.0,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin": [
+                0.2,
+                0.3,
+                2.2
+              ],
+              "rotationX": 67.5,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "children": [
+                {
+                  "name": "leg-left-4-2",
+                  "from": [
+                    0.0,
+                    0.0,
+                    1.25
+                  ],
+                  "to": [
+                    0.3,
+                    0.3,
+                    1.75
+                  ],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.5,
+                        0.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "east": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "south": {
+                      "texture": "#null",
+                      "uv": [
+                        1.0,
+                        0.5,
+                        1.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "west": {
+                      "texture": "#null",
+                      "uv": [
+                        1.5,
+                        0.5,
+                        2.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "up": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.0,
+                        0.5,
+                        0.5
+                      ],
+                      "enabled": true
+                    },
+                    "down": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.0,
+                        1.0,
+                        0.5
+                      ],
+                      "enabled": true
+                    }
+                  },
+                  "rotationOrigin": [
+                    0.15,
+                    0.3,
+                    1.25
+                  ],
+                  "rotationX": 22.5,
+                  "scaleX": 1.0,
+                  "scaleY": 1.0,
+                  "scaleZ": 1.0,
+                  "renderPass": -1,
+                  "renderInEditor": true,
+                  "uv": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "renderInEditor": true,
+              "uv": [
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "renderInEditor": true,
+          "uv": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "leg-right-1",
+          "from": [
+            0.0,
+            0.1,
+            -1.8
+          ],
+          "to": [
+            0.4,
+            0.5,
+            0.2
+          ],
+          "shade": true,
+          "faces": {
+            "north": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                2.0,
+                0.5,
+                2.5
+              ],
+              "enabled": true
+            },
+            "east": {
+              "texture": "#null",
+              "uv": [
+                0.5,
+                2.0,
+                2.5,
+                2.5
+              ],
+              "enabled": true
+            },
+            "south": {
+              "texture": "#null",
+              "uv": [
+                2.5,
+                2.0,
+                3.0,
+                2.5
+              ],
+              "enabled": true
+            },
+            "west": {
+              "texture": "#null",
+              "uv": [
+                3.0,
+                2.0,
+                5.0,
+                2.5
+              ],
+              "enabled": true
+            },
+            "up": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                0.0,
+                0.5,
+                2.0
+              ],
+              "enabled": true
+            },
+            "down": {
+              "texture": "#null",
+              "uv": [
+                0.5,
+                0.0,
+                1.0,
+                2.0
+              ],
+              "enabled": true
+            }
+          },
+          "rotationOrigin": [
+            0.2,
+            0.5,
+            0.2
+          ],
+          "rotationX": 30.0,
+          "rotationY": 45.0,
+          "rotationZ": -22.5,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "scaleZ": 1.0,
+          "renderPass": -1,
+          "children": [
+            {
+              "name": "leg-right-1-1",
+              "from": [
+                0.05,
+                0.0,
+                -1.4
+              ],
+              "to": [
+                0.35,
+                0.3,
+                -0.2
+              ],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    1.0,
+                    0.5,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    1.0,
+                    1.5,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#null",
+                  "uv": [
+                    1.5,
+                    1.0,
+                    2.0,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#null",
+                  "uv": [
+                    2.0,
+                    1.0,
+                    3.0,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin": [
+                0.2,
+                0.3,
+                -0.2
+              ],
+              "rotationX": -67.5,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "children": [
+                {
+                  "name": "leg-right-1-2",
+                  "from": [
+                    0.0,
+                    0.0,
+                    -0.5
+                  ],
+                  "to": [
+                    0.3,
+                    0.3,
+                    0.0
+                  ],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.5,
+                        0.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "east": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "south": {
+                      "texture": "#null",
+                      "uv": [
+                        1.0,
+                        0.5,
+                        1.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "west": {
+                      "texture": "#null",
+                      "uv": [
+                        1.5,
+                        0.5,
+                        2.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "up": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.0,
+                        0.5,
+                        0.5
+                      ],
+                      "enabled": true
+                    },
+                    "down": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.0,
+                        1.0,
+                        0.5
+                      ],
+                      "enabled": true
+                    }
+                  },
+                  "rotationOrigin": [
+                    0.15000000596046448,
+                    0.30000001192092896,
+                    -1.4901161193847656E-08
+                  ],
+                  "rotationX": -22.5,
+                  "scaleX": 1.0,
+                  "scaleY": 1.0,
+                  "scaleZ": 1.0,
+                  "renderPass": -1,
+                  "renderInEditor": true,
+                  "uv": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "renderInEditor": true,
+              "uv": [
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "renderInEditor": true,
+          "uv": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "leg-right-2",
+          "from": [
+            0.4,
+            -0.1,
+            -1.5
+          ],
+          "to": [
+            0.8,
+            0.3,
+            0.5
+          ],
+          "shade": true,
+          "faces": {
+            "north": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                2.0,
+                0.5,
+                2.5
+              ],
+              "enabled": true
+            },
+            "east": {
+              "texture": "#null",
+              "uv": [
+                0.5,
+                2.0,
+                2.5,
+                2.5
+              ],
+              "enabled": true
+            },
+            "south": {
+              "texture": "#null",
+              "uv": [
+                2.5,
+                2.0,
+                3.0,
+                2.5
+              ],
+              "enabled": true
+            },
+            "west": {
+              "texture": "#null",
+              "uv": [
+                3.0,
+                2.0,
+                5.0,
+                2.5
+              ],
+              "enabled": true
+            },
+            "up": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                0.0,
+                0.5,
+                2.0
+              ],
+              "enabled": true
+            },
+            "down": {
+              "texture": "#null",
+              "uv": [
+                0.5,
+                0.0,
+                1.0,
+                2.0
+              ],
+              "enabled": true
+            }
+          },
+          "rotationOrigin": [
+            0.6,
+            0.30000001192092896,
+            0.5
+          ],
+          "rotationX": 30.0,
+          "rotationY": 22.5,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "scaleZ": 1.0,
+          "renderPass": -1,
+          "children": [
+            {
+              "name": "leg-right-2-1",
+              "from": [
+                0.05,
+                0.0,
+                -1.5
+              ],
+              "to": [
+                0.35,
+                0.3,
+                -0.10000000000000009
+              ],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    1.0,
+                    0.5,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    1.0,
+                    1.5,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#null",
+                  "uv": [
+                    1.5,
+                    1.0,
+                    2.0,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#null",
+                  "uv": [
+                    2.0,
+                    1.0,
+                    3.0,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin": [
+                0.2,
+                0.3,
+                -0.20000000298023224
+              ],
+              "rotationX": -67.5,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "children": [
+                {
+                  "name": "leg-right-2-2",
+                  "from": [
+                    0.0,
+                    0.0,
+                    -0.5
+                  ],
+                  "to": [
+                    0.3,
+                    0.3,
+                    0.0
+                  ],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.5,
+                        0.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "east": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "south": {
+                      "texture": "#null",
+                      "uv": [
+                        1.0,
+                        0.5,
+                        1.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "west": {
+                      "texture": "#null",
+                      "uv": [
+                        1.5,
+                        0.5,
+                        2.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "up": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.0,
+                        0.5,
+                        0.5
+                      ],
+                      "enabled": true
+                    },
+                    "down": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.0,
+                        1.0,
+                        0.5
+                      ],
+                      "enabled": true
+                    }
+                  },
+                  "rotationOrigin": [
+                    0.15000000596046448,
+                    0.30000001192092896,
+                    0.0
+                  ],
+                  "rotationX": -22.5,
+                  "scaleX": 1.0,
+                  "scaleY": 1.0,
+                  "scaleZ": 1.0,
+                  "renderPass": -1,
+                  "renderInEditor": true,
+                  "uv": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "renderInEditor": true,
+              "uv": [
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "renderInEditor": true,
+          "uv": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "leg-right-3",
+          "from": [
+            0.7,
+            -0.1,
+            -1.5
+          ],
+          "to": [
+            1.1,
+            0.3,
+            0.5
+          ],
+          "shade": true,
+          "faces": {
+            "north": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                2.0,
+                0.5,
+                2.5
+              ],
+              "enabled": true
+            },
+            "east": {
+              "texture": "#null",
+              "uv": [
+                0.5,
+                2.0,
+                2.5,
+                2.5
+              ],
+              "enabled": true
+            },
+            "south": {
+              "texture": "#null",
+              "uv": [
+                2.5,
+                2.0,
+                3.0,
+                2.5
+              ],
+              "enabled": true
+            },
+            "west": {
+              "texture": "#null",
+              "uv": [
+                3.0,
+                2.0,
+                5.0,
+                2.5
+              ],
+              "enabled": true
+            },
+            "up": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                0.0,
+                0.5,
+                2.0
+              ],
+              "enabled": true
+            },
+            "down": {
+              "texture": "#null",
+              "uv": [
+                0.5,
+                0.0,
+                1.0,
+                2.0
+              ],
+              "enabled": true
+            }
+          },
+          "rotationOrigin": [
+            0.9,
+            0.3,
+            0.5
+          ],
+          "rotationX": 30.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "scaleZ": 1.0,
+          "renderPass": -1,
+          "children": [
+            {
+              "name": "leg-right-3-1",
+              "from": [
+                0.05,
+                0.0,
+                -1.6
+              ],
+              "to": [
+                0.35,
+                0.3,
+                -0.2
+              ],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    1.0,
+                    0.5,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    1.0,
+                    1.5,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#null",
+                  "uv": [
+                    1.5,
+                    1.0,
+                    2.0,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#null",
+                  "uv": [
+                    2.0,
+                    1.0,
+                    3.0,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin": [
+                0.2,
+                0.3,
+                -0.2
+              ],
+              "rotationX": -70.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "children": [
+                {
+                  "name": "leg-right-3-2",
+                  "from": [
+                    0.0,
+                    0.0,
+                    -0.5
+                  ],
+                  "to": [
+                    0.3,
+                    0.3,
+                    0.0
+                  ],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.5,
+                        0.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "east": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "south": {
+                      "texture": "#null",
+                      "uv": [
+                        1.0,
+                        0.5,
+                        1.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "west": {
+                      "texture": "#null",
+                      "uv": [
+                        1.5,
+                        0.5,
+                        2.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "up": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.0,
+                        0.5,
+                        0.5
+                      ],
+                      "enabled": true
+                    },
+                    "down": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.0,
+                        1.0,
+                        0.5
+                      ],
+                      "enabled": true
+                    }
+                  },
+                  "rotationOrigin": [
+                    0.15000000000000002,
+                    0.3,
+                    0.0
+                  ],
+                  "rotationX": -22.5,
+                  "scaleX": 1.0,
+                  "scaleY": 1.0,
+                  "scaleZ": 1.0,
+                  "renderPass": -1,
+                  "renderInEditor": true,
+                  "uv": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "renderInEditor": true,
+              "uv": [
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "renderInEditor": true,
+          "uv": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "leg-right-4",
+          "from": [
+            1.0,
+            0.0,
+            -1.5
+          ],
+          "to": [
+            1.4,
+            0.4,
+            0.5
+          ],
+          "shade": true,
+          "faces": {
+            "north": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                2.0,
+                0.5,
+                2.5
+              ],
+              "enabled": true
+            },
+            "east": {
+              "texture": "#null",
+              "uv": [
+                0.5,
+                2.0,
+                2.5,
+                2.5
+              ],
+              "enabled": true
+            },
+            "south": {
+              "texture": "#null",
+              "uv": [
+                2.5,
+                2.0,
+                3.0,
+                2.5
+              ],
+              "enabled": true
+            },
+            "west": {
+              "texture": "#null",
+              "uv": [
+                3.0,
+                2.0,
+                5.0,
+                2.5
+              ],
+              "enabled": true
+            },
+            "up": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                0.0,
+                0.5,
+                2.0
+              ],
+              "enabled": true
+            },
+            "down": {
+              "texture": "#null",
+              "uv": [
+                0.5,
+                0.0,
+                1.0,
+                2.0
+              ],
+              "enabled": true
+            }
+          },
+          "rotationOrigin": [
+            1.2,
+            0.4,
+            0.5
+          ],
+          "rotationX": 22.5,
+          "rotationY": -22.5,
+          "rotationZ": 22.5,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "scaleZ": 1.0,
+          "renderPass": -1,
+          "children": [
+            {
+              "name": "leg-right-4-1",
+              "from": [
+                0.05,
+                0.0,
+                -1.4
+              ],
+              "to": [
+                0.35,
+                0.3,
+                -0.2
+              ],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    1.0,
+                    0.5,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    1.0,
+                    1.5,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#null",
+                  "uv": [
+                    1.5,
+                    1.0,
+                    2.0,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#null",
+                  "uv": [
+                    2.0,
+                    1.0,
+                    3.0,
+                    1.5
+                  ],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin": [
+                0.2,
+                0.3,
+                -0.2
+              ],
+              "rotationX": -67.5,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "children": [
+                {
+                  "name": "leg-right-4-2",
+                  "from": [
+                    0.0,
+                    0.0,
+                    -0.5
+                  ],
+                  "to": [
+                    0.3,
+                    0.30000000000000004,
+                    0.0
+                  ],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.5,
+                        0.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "east": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "south": {
+                      "texture": "#null",
+                      "uv": [
+                        1.0,
+                        0.5,
+                        1.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "west": {
+                      "texture": "#null",
+                      "uv": [
+                        1.5,
+                        0.5,
+                        2.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "up": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.0,
+                        0.5,
+                        0.5
+                      ],
+                      "enabled": true
+                    },
+                    "down": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.0,
+                        1.0,
+                        0.5
+                      ],
+                      "enabled": true
+                    }
+                  },
+                  "rotationOrigin": [
+                    0.15000000000000002,
+                    0.30000001192092896,
+                    0.0
+                  ],
+                  "rotationX": -22.5,
+                  "scaleX": 1.0,
+                  "scaleY": 1.0,
+                  "scaleZ": 1.0,
+                  "renderPass": -1,
+                  "renderInEditor": true,
+                  "uv": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "renderInEditor": true,
+              "uv": [
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "renderInEditor": true,
+          "uv": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "abdomen",
+          "from": [
+            1.25,
+            0.0,
+            0.25
+          ],
+          "to": [
+            3.25,
+            1.0,
+            1.75
+          ],
+          "shade": true,
+          "faces": {
+            "north": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                1.5,
+                2.0,
+                2.5
+              ],
+              "enabled": true
+            },
+            "east": {
+              "texture": "#null",
+              "uv": [
+                2.0,
+                1.5,
+                3.5,
+                2.5
+              ],
+              "enabled": true
+            },
+            "south": {
+              "texture": "#null",
+              "uv": [
+                3.5,
+                1.5,
+                5.5,
+                2.5
+              ],
+              "enabled": true
+            },
+            "west": {
+              "texture": "#null",
+              "uv": [
+                5.5,
+                1.5,
+                7.0,
+                2.5
+              ],
+              "enabled": true
+            },
+            "up": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                0.0,
+                2.0,
+                1.5
+              ],
+              "enabled": true
+            },
+            "down": {
+              "texture": "#null",
+              "uv": [
+                2.0,
+                0.0,
+                4.0,
+                1.5
+              ],
+              "enabled": true
+            }
+          },
+          "rotationOrigin": [
+            1.25,
+            1.0,
+            1.0
+          ],
+          "rotationZ": -10.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "scaleZ": 1.0,
+          "renderPass": -1,
+          "renderInEditor": true,
+          "uv": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "pedipalp-left-1",
+          "from": [
+            -1.0,
+            0.20000000298023224,
+            1.6000000238418579
+          ],
+          "to": [
+            0.20000004768371582,
+            0.50000001490116119,
+            1.9000000357627869
+          ],
+          "shade": true,
+          "faces": {
+            "north": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                0.5,
+                1.0,
+                1.0
+              ],
+              "enabled": true
+            },
+            "east": {
+              "texture": "#null",
+              "uv": [
+                1.0,
+                0.5,
+                1.5,
+                1.0
+              ],
+              "enabled": true
+            },
+            "south": {
+              "texture": "#null",
+              "uv": [
+                1.5,
+                0.5,
+                2.5,
+                1.0
+              ],
+              "enabled": true
+            },
+            "west": {
+              "texture": "#null",
+              "uv": [
+                2.5,
+                0.5,
+                3.0,
+                1.0
+              ],
+              "enabled": true
+            },
+            "up": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                0.0,
+                1.0,
+                0.5
+              ],
+              "enabled": true
+            },
+            "down": {
+              "texture": "#null",
+              "uv": [
+                1.0,
+                0.0,
+                2.0,
+                0.5
+              ],
+              "enabled": true
+            }
+          },
+          "rotationOrigin": [
+            -0.19999998807907104,
+            0.5000000074505806,
+            1.75
+          ],
+          "rotationZ": -20.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "scaleZ": 1.0,
+          "renderPass": -1,
+          "children": [
+            {
+              "name": "pedipalp-left-1-1",
+              "from": [
+                -0.699999988079071,
+                -0.10000000149011612,
+                0.05000000074505806
+              ],
+              "to": [
+                0.10000002384185791,
+                0.10000000149011612,
+                0.2500000037252903
+              ],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#null",
+                  "uv": [
+                    1.0,
+                    0.5,
+                    1.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#null",
+                  "uv": [
+                    1.5,
+                    0.5,
+                    2.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    0.5
+                  ],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    0.0,
+                    1.0,
+                    0.5
+                  ],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin": [
+                -0.19999998807907104,
+                0.10000000149011612,
+                0.15000000223517418
+              ],
+              "rotationZ": 35.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "children": [
+                {
+                  "name": "pedipalp-left-1-2",
+                  "from": [
+                    -0.5,
+                    0.10000000149011612,
+                    0.05000000074505806
+                  ],
+                  "to": [
+                    0.10000002384185791,
+                    0.20000000298023224,
+                    0.15000000223517418
+                  ],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.5,
+                        0.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "east": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "south": {
+                      "texture": "#null",
+                      "uv": [
+                        1.0,
+                        0.5,
+                        1.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "west": {
+                      "texture": "#null",
+                      "uv": [
+                        1.5,
+                        0.5,
+                        2.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "up": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.0,
+                        0.5,
+                        0.5
+                      ],
+                      "enabled": true
+                    },
+                    "down": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.0,
+                        1.0,
+                        0.5
+                      ],
+                      "enabled": true
+                    }
+                  },
+                  "rotationOrigin": [
+                    0.10000002384185791,
+                    0.10000000149011612,
+                    0.10000000149011612
+                  ],
+                  "rotationZ": 45.0,
+                  "scaleX": 1.0,
+                  "scaleY": 1.0,
+                  "scaleZ": 1.0,
+                  "renderPass": -1,
+                  "children": [],
+                  "renderInEditor": true,
+                  "uv": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "renderInEditor": true,
+              "uv": [
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "renderInEditor": true,
+          "uv": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "pedipalp-left-2",
+          "from": [
+            -1.0,
+            0.20000000298023224,
+            0.20000000298023224
+          ],
+          "to": [
+            0.20000004768371582,
+            0.50000001490116119,
+            0.50000001490116119
+          ],
+          "shade": true,
+          "faces": {
+            "north": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                0.5,
+                1.0,
+                1.0
+              ],
+              "enabled": true
+            },
+            "east": {
+              "texture": "#null",
+              "uv": [
+                1.0,
+                0.5,
+                1.5,
+                1.0
+              ],
+              "enabled": true
+            },
+            "south": {
+              "texture": "#null",
+              "uv": [
+                1.5,
+                0.5,
+                2.5,
+                1.0
+              ],
+              "enabled": true
+            },
+            "west": {
+              "texture": "#null",
+              "uv": [
+                2.5,
+                0.5,
+                3.0,
+                1.0
+              ],
+              "enabled": true
+            },
+            "up": {
+              "texture": "#null",
+              "uv": [
+                0.0,
+                0.0,
+                1.0,
+                0.5
+              ],
+              "enabled": true
+            },
+            "down": {
+              "texture": "#null",
+              "uv": [
+                1.0,
+                0.0,
+                2.0,
+                0.5
+              ],
+              "enabled": true
+            }
+          },
+          "rotationOrigin": [
+            -0.19999998807907104,
+            0.5000000074505806,
+            0.34999997913837433
+          ],
+          "rotationZ": -20.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "scaleZ": 1.0,
+          "renderPass": -1,
+          "children": [
+            {
+              "name": "pedipalp-left-2-1",
+              "from": [
+                -0.699999988079071,
+                -0.10000000149011612,
+                0.05000000074505806
+              ],
+              "to": [
+                0.10000002384185791,
+                0.10000000149011612,
+                0.2500000037252903
+              ],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    0.5,
+                    0.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#null",
+                  "uv": [
+                    1.0,
+                    0.5,
+                    1.5,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#null",
+                  "uv": [
+                    1.5,
+                    0.5,
+                    2.0,
+                    1.0
+                  ],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#null",
+                  "uv": [
+                    0.0,
+                    0.0,
+                    0.5,
+                    0.5
+                  ],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#null",
+                  "uv": [
+                    0.5,
+                    0.0,
+                    1.0,
+                    0.5
+                  ],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin": [
+                -0.19999998807907104,
+                0.10000000149011612,
+                0.15000000223517418
+              ],
+              "rotationZ": 35.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "children": [
+                {
+                  "name": "pedipalp-left-2-2",
+                  "from": [
+                    -0.5,
+                    0.10000000149011612,
+                    0.05000000074505806
+                  ],
+                  "to": [
+                    0.10000002384185791,
+                    0.20000000298023224,
+                    0.15000000223517418
+                  ],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.5,
+                        0.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "east": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "south": {
+                      "texture": "#null",
+                      "uv": [
+                        1.0,
+                        0.5,
+                        1.5,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "west": {
+                      "texture": "#null",
+                      "uv": [
+                        1.5,
+                        0.5,
+                        2.0,
+                        1.0
+                      ],
+                      "enabled": true
+                    },
+                    "up": {
+                      "texture": "#null",
+                      "uv": [
+                        0.0,
+                        0.0,
+                        0.5,
+                        0.5
+                      ],
+                      "enabled": true
+                    },
+                    "down": {
+                      "texture": "#null",
+                      "uv": [
+                        0.5,
+                        0.0,
+                        1.0,
+                        0.5
+                      ],
+                      "enabled": true
+                    }
+                  },
+                  "rotationOrigin": [
+                    0.10000002384185791,
+                    0.10000000149011612,
+                    0.10000000149011612
+                  ],
+                  "rotationZ": 45.0,
+                  "scaleX": 1.0,
+                  "scaleY": 1.0,
+                  "scaleZ": 1.0,
+                  "renderPass": -1,
+                  "children": [],
+                  "renderInEditor": true,
+                  "uv": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "renderInEditor": true,
+              "uv": [
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "renderInEditor": true,
+          "uv": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "renderInEditor": true,
+      "uv": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "animations": [
+    {
+      "quantityframes": 120,
+      "name": "idle1",
+      "code": "idle1",
+      "keyframes": [
+        {
+          "frame": 0,
+          "elements": {
+            "pedipalp-left-1": {
+              "rotationX": 0.0,
+              "rotationY": 0.0,
+              "rotationZ": 0.0
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "elements": {
+            "pedipalp-left-1": {
+              "rotationX": 0.0,
+              "rotationY": -20.0,
+              "rotationZ": -17.0
+            }
+          }
+        },
+        {
+          "frame": 20,
+          "elements": {
+            "pedipalp-left-1": {
+              "rotationX": 0.0,
+              "rotationY": -11.0,
+              "rotationZ": 5.0
+            }
+          }
+        },
+        {
+          "frame": 25,
+          "elements": {
+            "pedipalp-left-1": {
+              "rotationX": 0.0,
+              "rotationY": -20.0,
+              "rotationZ": -17.0
+            }
+          }
+        },
+        {
+          "frame": 35,
+          "elements": {
+            "pedipalp-left-1": {
+              "rotationX": 0.0,
+              "rotationY": -11.0,
+              "rotationZ": 5.0
+            }
+          }
+        }
+      ],
+      "onActivityStopped": "Rewind"
+    }
+  ],
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textureSizes": {}
+}

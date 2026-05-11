@@ -19,9 +19,6 @@ namespace FieldsOfCranberries.WaterHarvestableBehavior
 
         }
 
-        BEBehaviorFruitingBush behfruitingBush;
-        BlockBehaviorFruitingBush bhBush;
-
 
         public override void OnNeighbourBlockChange(IWorldAccessor world, BlockPos pos, BlockPos neibpos, ref EnumHandling handling)
         {
