@@ -3,15 +3,15 @@
 	"class": "EntityLocust",
 	"tags": ["habitat-land"],
 	"variantgroups": [ { "code": "type", "states": ["wolf"] } ] ,
-	"weight": 90,
+	"weight": 5,
 	"canClimb": true,
 	"canClimbAnywhere": true,
-	"climbTouchDistance": 0.1,
+	"climbTouchDistance": 0.025,
 	"rotateModelOnClimb": true,
 	"fallDamageMultiplier": 0.0,
-	"hitboxSize": { "x": 0.65, "y": 0.6 },
-	"deadHitboxSize": { "x": 0.65, "y": 0.5 },
-	"eyeHeight"	: 0.3,
+	"hitboxSize": { "x": 0.2, "y": 0.2 },
+	"deadHitboxSize": { "x": 0.2, "y": 0.2 },
+	"eyeHeight"	: 0.1,
 	"attributes": {
 		"spawnDamageParticles": true,
 		"isMechanical": false
@@ -19,7 +19,7 @@
 	"client": {
 		"renderer": "Shape",
 		"shape": { "base": "entity/animal/invertebrate/spider" },
-		"size": 1,
+		"size": 0.6,
 		"behaviors": [
 			{ "code": "repulseagents" },
 			{ "code": "controlledphysics", "stepHeight": 0.5 },
@@ -53,60 +53,27 @@
 	"server": {
 		"behaviors": [
 			{ "code": "repulseagents" },
-			{ "code": "controlledphysics", "stepHeight": 1.1251 },
+			{ "code": "controlledphysics", "stepHeight": 0.5 },
 			{ "code": "health",
 				"currenthealthByType": {
-					"*-wolf": 3
+					"*-wolf": 1
 				},
 				"maxhealthByType": {
-					"*-wolf": 3
+					"*-wolf": 1
 				}
 			},
-			{ "code": "deaddecay", "hoursToDecay": 24 },
+			{ "code": "deaddecay", "hoursToDecay": 1 },
 			{ "code": "floatupwhenstuck", "onlyWhenDead": true },
-			{ "code": "despawn", "minPlayerDistance": 48, "minSecondsByType": { "*-wolf": 900, "*": 90 } },
+			{ "code": "despawn", "minPlayerDistance": 48, "minSecondsByType": { "*-wolf": 30 } },
 			{
 				"code": "emotionstates",
 				"states": [
-					{ "code": "fleeondamage", "duration": 10, "chance": 0.2, "slot": 0, "priority": 1, "accumType": "max" },
-					{ "code": "aggressiveondamage", "duration": 30, "chance": 1, "slot": 0, "priority": 0.5, "accumType": "noaccum" }
+					{ "code": "fleeondamage", "duration": 10, "chance": 1.0, "slot": 0, "priority": 1, "accumType": "max" }
 				]
 			},
 			{
 				"code": "taskai",
 				"aitasks": [
-					{
-						"code": "meleeattack",
-						"entityCodes": ["player"],
-						"priority": 3,
-						"damageByType": {
-							"*-wolf": 0.25
-						},
-						"damageTierByType": {
-							"*-wolf": 1
-						},
-						"mincooldown": 1500,
-						"maxcooldown": 1500,
-						"damageTypeByType": {
-							"*-wolf": "PiercingAttack"
-						},
-						"damagePlayerAtMs": 500,
-						"attackDurationMs": 800,
-						"animation": "attack",
-						"animationSpeed": 1.8,
-						"soundStartMs": 1000
-					},
-					{
-						"code": "stayclosetoentity",
-						"priority": 3,
-						"entityCode": "spider",
-						"movespeed": 0.02,
-						"maxDistance": 7,
-						"onlyIfLowerId": true,
-						"searchRange": 12,
-						"animation": "run",
-						"animationSpeed": 6.5
-					},
 					{
 						"code": "seekentity",
 						"entityCodes": ["player"],
