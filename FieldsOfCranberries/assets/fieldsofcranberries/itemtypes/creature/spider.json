@@ -1,0 +1,49 @@
+{
+	"code": "creature",
+	"class": "ItemCreature",
+	"maxstacksize": 64,
+    "variantgroups": [ { "code": "type", "states": ["spider-wolf"] } ] ,
+
+	"shapeByType": {
+		"*-wolf": { "base": "fieldsofcranberries:entity/animal/invertebrate/spider"}
+    },
+    "texturesByType": {
+        "*-wolf": {
+            "spider": {
+                "base": "fieldsofcranberries:entity/animal/invertebrate/spider"
+            }
+        }
+    },
+	"creativeinventory": { "general": ["*"], "items": ["*"], "creatures": ["*"] },
+	"materialDensity": 600,
+	"guiTransformByType": {
+		"*-wolf": {
+			"rotate": true,
+			"translation": { "x": 3, "y": 8, "z": 8 },
+			"rotation": { "x": -11, "y": -52, "z": 0 },
+			"origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
+			"scale": 2
+		}				
+	},
+	"tpHandTransformByType": {
+		"*-wolf": {
+			"translation": { "x": -0.9, "y": -0.9, "z": -0.7 },
+			"rotation": { "x": -180, "y": 0, "z": -156 },
+			"scale": 2
+		}		
+	},
+	"fpHandTransformByType": {
+		"*-wolf": {
+			"translation": { "x": 4, "y": 4, "z": 8 },
+			"rotation": { "x": -8, "y": -63, "z": 180 }
+		}
+	}}
+	
+
+	
+	
+	
+	
+
+
+

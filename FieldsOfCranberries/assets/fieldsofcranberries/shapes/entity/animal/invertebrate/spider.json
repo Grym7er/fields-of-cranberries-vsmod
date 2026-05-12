@@ -6,11 +6,10 @@
 	"textureWidth": 32,
 	"textureHeight": 32,
 	"textureSizes": {
-		"spider": [32,32],
-		"spider_backupuv (copy)": [32,32]
+		"spider": [32,32]
 	},
 	"textures": {
-		"spider": "/home/dewet/Documents/projects/VintageStoryMods/fields_of_cranberries_vsmod/FieldsOfCranberries/assets/spider"
+		"spider": "fieldsofcranberries:entity/animal/invertebrate/spider"
 	},
 	"elements": [
 		{
