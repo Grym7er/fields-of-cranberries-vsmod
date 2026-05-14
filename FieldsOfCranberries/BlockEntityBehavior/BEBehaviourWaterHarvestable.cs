@@ -11,7 +11,6 @@ using Vintagestory.API.Server;
 using Vintagestory.API.Util;
 using FieldsOfCranberries.WaterHarvestableBehavior;
 using Vintagestory.GameContent;
-using FieldsOfCranberries.Entities;
 
 #nullable disable
 namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
@@ -33,6 +32,7 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
                 isInWater = value;
             }
         }
+        private long MySpiderEntityId = -1;
 
         AssetLocation entitySpawnableSpider = new AssetLocation("fieldsofcranberries:spider-wolf");
 
@@ -43,9 +43,13 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
         }
         protected virtual float getYieldMul()
         {
-            if (behfruitingBush.BState.Traits.Contains("heavybearer")) return 1.15f;
-            if (behfruitingBush.BState.Traits.Contains("shybearer")) return 0.85f;
-            return 1;
+            float spiderBuff = 0.0f;
+
+            if (MySpiderEntityId != -1) spiderBuff = 0.15f; // TODO: Make this a configurable value
+
+            if (behfruitingBush.BState.Traits.Contains("heavybearer")) return 1.15f + spiderBuff;
+            if (behfruitingBush.BState.Traits.Contains("shybearer")) return 0.85f + spiderBuff;
+            return 1 + spiderBuff;
         }
 
         protected void setGrowthState(EnumFruitingBushGrowthState state)
@@ -70,12 +74,14 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
 
         public bool CheckIfInWater()
         {
+            if (!Api.World.Side.IsServer()) return false;
             IsInWater = Api.World.BlockAccessor.GetBlock(this.Pos, BlockLayersAccess.Fluid).LiquidCode == "water";
             return IsInWater;
         }
 
         public bool CheckIfWentIntoWater()
         {
+            if (!Api.World.Side.IsServer()) return false;
             // Console.WriteLine("CheckIfWentIntoWater called. Currently in water? " + IsInWater);
             // Check if was not in water and is now in water, i.e
             // went from dry air to water
@@ -93,11 +99,22 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
             return false;
         }
 
+        public override void GetBlockInfo(IPlayer forPlayer, StringBuilder dsc)
+        {
+            base.GetBlockInfo(forPlayer, dsc);
+            if (MySpiderEntityId != -1)
+            {
+                dsc.AppendLine(Lang.Get("fieldsofcranberries:spideronbush-tooltip"));
+            }
+        }
+
         float[] dropRates = [0f, 0.5f, 1f, 1.5f];
         public void TryDropBerries()
         {
+            if (!Api.World.Side.IsServer()) return;
             if (behfruitingBush.BState.Growthstate is not EnumFruitingBushGrowthState.Ripe) return;
             
+
             float dropRate = getYieldMul();
 
             bhBush.harvestedStacks.Foreach(harvestedStack =>
@@ -127,6 +144,12 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
 
         public void TrySpawnSpider(BlockPos spawnPos)
         {
+            if (!Api.World.Side.IsServer()) return;
+            #if DEBUG
+            Console.WriteLine("Trying to spawn spider at {0}", spawnPos);
+            #endif
+
+            if (MySpiderEntityId != -1) return; //Don't spawn spider if there is already one on the bush
             
             #if DEBUG
             if (Api.World.Rand.NextDouble() < 1.0) // will make it smaller in deployment
@@ -144,25 +167,52 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
                 Entity entity = sapi.ClassRegistry.CreateEntity(type);
 
                 
-                // We want to offset the spawn pos y so the spider spawns on top of the water level.
-
                 // EntityAgent agent = entity as EntityAgent;
                 // if (agent != null) agent.HerdId = herdid;
 
                 entity.Pos.SetPosWithDimension(spawnPos);
                 entity.Pos.SetYaw((float)sapi.World.Rand.NextDouble() * GameMath.TWOPI);
                 entity.PositionBeforeFalling.Set(entity.Pos.X, entity.Pos.Y, entity.Pos.Z);
-
+                                
                 sapi.World.SpawnEntity(entity);
+                AllocateSpiderToBush(entity, spawnPos);
                 
                 return;
             }
+        }
+
+        private void AllocateSpiderToBush(Entity spider, BlockPos bushPos)
+        {
+            #if DEBUG
+            Console.WriteLine("Allocating spider to bush at {0}", bushPos);
+            #endif
+            
+            spider.WatchedAttributes.SetBlockPos("berrybushpos", bushPos);
+            MySpiderEntityId = spider.EntityId;
+            Blockentity.MarkDirty(true);
+            #if DEBUG
+            Console.WriteLine("Allocated spider to bush at {0}", bushPos);
+            #endif
+        }
+
+        public void DeallocateSpiderFromBush(Entity spider)
+        {
+            if (!Api.World.Side.IsServer()) return;
+            
+            // On spider death, spider should call this method to deallocate itself from the bush
+            if (spider.EntityId == MySpiderEntityId)
+            {
+                MySpiderEntityId = -1;
+            }
+            Blockentity.MarkDirty(true);
         }
 
 
 
         public override void OnBlockPlaced(ItemStack byItemStack = null)
         {
+            if (!Api.World.Side.IsServer()) return;
+            
             CheckIfInWater();
 
             #if DEBUG
@@ -179,12 +229,14 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
         {
             base.FromTreeAttributes(tree, worldAccessForResolve);
             IsInWater = tree.GetBool("isInWater");
+            MySpiderEntityId = tree.GetLong("mySpiderEntityId");
         }
 
         public override void ToTreeAttributes(ITreeAttribute tree)
         {
             base.ToTreeAttributes(tree);
             tree.SetBool("isInWater", IsInWater);
+            tree.SetLong("mySpiderEntityId", MySpiderEntityId);
         }
     }
 }

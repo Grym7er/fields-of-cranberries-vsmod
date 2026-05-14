@@ -4,6 +4,7 @@ using Vintagestory.API.Config;
 using Vintagestory.API.Server;
 using FieldsOfCranberries.WaterHarvestableBehavior;
 using FieldsOfCranberries.WaterHarvestableBEBehaviour;
+using FieldsOfCranberries.FOCEntityBehaviors;
 
 namespace FieldsOfCranberries
 {
@@ -16,6 +17,7 @@ namespace FieldsOfCranberries
             Mod.Logger.Notification("Fields of Cranberries mod started");
             api.RegisterBlockBehaviorClass("WaterHarvestable", typeof(BlockBehaviorWaterHarvestable));
             api.RegisterBlockEntityBehaviorClass("WaterHarvestable", typeof(BEBehaviourWaterHarvestable));
+            api.RegisterEntityBehaviorClass("trackberrybush", typeof(EntitySpiderTrackBerryBush));
         }
 
 
