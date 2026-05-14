@@ -64,6 +64,13 @@
 				"blendMode": "Average"
 			},
 			{
+				"code": "run",
+				"animation": "run",
+				"animationSpeed": 2.0,
+				"weight": 5,
+				"blendMode": "Average"
+			},
+			{
 				"code": "die",
 				"animation": "die",
 				"animationSpeed": 1.25,
@@ -162,11 +169,11 @@
 						"entityCodes": [
 						],
 						"seekingRange": 20,
-						"animation": "walk",
+						"animation": "run",
 						"instafleeOnDamageChance": 1,
 						"whenInEmotionState": "fleeondamage",
-						"animationSpeed": 3,
-						"movespeed": 0.009
+						"animationSpeed": 2,
+						"movespeed": 0.016
 					}
 				]
 			},

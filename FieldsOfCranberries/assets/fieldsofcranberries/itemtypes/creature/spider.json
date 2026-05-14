@@ -16,21 +16,21 @@
     },
 	"creativeinventory": { "general": ["*"], "items": ["*"], "creatures": ["*"] },
 	"materialDensity": 600,
+	"heldTpIdleAnimation": "holdbothhandslarge",
+	"heldTpUseAnimation": "twohandplaceblock",
 	"guiTransformByType": {
 		"*-wolf": {
-			"rotate": true,
-			"translation": { "x": 3, "y": 8, "z": 8 },
-			"rotation": { "x": -11, "y": -52, "z": 0 },
-			"origin": { "x": 0.5, "y": 0.5, "z": 0.5 },
-			"scale": 2
-		}				
+			"translation": { "x": 0, "y": -19, "z": 0 },
+			"rotation": { "x": -43, "y": -38, "z": -180 },
+			"scale": 2.53
+		  }			
 	},
 	"tpHandTransformByType": {
 		"*-wolf": {
-			"translation": { "x": -0.9, "y": -0.9, "z": -0.7 },
-			"rotation": { "x": -180, "y": 0, "z": -156 },
-			"scale": 2
-		}		
+			"translation": { "x": -0.6, "y": -0.1, "z": -0.125 },
+			"rotation": { "x": -6, "y": -154, "z": 53 },
+			"scale": 1.51
+		  }	
 	},
 	"fpHandTransformByType": {
 		"*-wolf": {

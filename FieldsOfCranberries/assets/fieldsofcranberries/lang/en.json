@@ -1,4 +1,4 @@
 {
     "spideronbush-tooltip": "This bush is the domain of a wolf spider. It will drop 15% more berries when wet harvested.",
-    "creature-spider-wolf": "Wolf Spider"
+    "*-creature-spider-wolf": "Wolf Spider"
 }

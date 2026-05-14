@@ -6,7 +6,7 @@
         "Grym7er"
     ],
     "description": "Introduces the wet harvest way of farming cranberries.",
-    "version": "0.0.1",
+    "version": "0.0.2-rc.2",
     "dependencies": {
         "game": ""
     }
