@@ -45,10 +45,6 @@
 				"stepHeight": 0.5
 			},
 			{
-				"code": "floatupwhenstuck",
-				"onlyWhenDead": true
-			},
-			{
 				"code": "interpolateposition"
 			}
 		],
@@ -144,10 +140,10 @@
 						"code": "wander",
 						"priority": 1.3,
 						"priorityForCancel": 1.3,
-						"movespeed": 0.01,
-						"animationSpeed": 2,
+						"movespeed": 0.003,
+						"animationSpeed": 1,
 						"animation": "walk",
-						"maxDistanceToSpawn": 4
+						"maxDistanceToSpawn": 6
 					},
 					{
 						"code": "idle",
@@ -164,13 +160,13 @@
 						"code": "fleeentity",
 						"priority": 1.7,
 						"entityCodes": [
-							"player"
 						],
 						"seekingRange": 20,
 						"animation": "walk",
+						"instafleeOnDamageChance": 1,
 						"whenInEmotionState": "fleeondamage",
-						"animationSpeed": 1.25,
-						"movespeed": 0.1
+						"animationSpeed": 3,
+						"movespeed": 0.009
 					}
 				]
 			},

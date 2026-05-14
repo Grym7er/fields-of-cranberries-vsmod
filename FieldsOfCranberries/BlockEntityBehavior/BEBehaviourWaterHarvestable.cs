@@ -154,7 +154,7 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
             #if DEBUG
             if (Api.World.Rand.NextDouble() < 1.0) // will make it smaller in deployment
             #else
-            if (Api.World.Rand.NextDouble() < 0.2)
+            if (Api.World.Rand.NextDouble() < 0.05)
             #endif
             {
                 EntityProperties type = Api.World.GetEntityType(entitySpawnableSpider);
@@ -212,7 +212,7 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
         public override void OnBlockPlaced(ItemStack byItemStack = null)
         {
             if (!Api.World.Side.IsServer()) return;
-            
+
             CheckIfInWater();
 
             #if DEBUG
