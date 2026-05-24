@@ -173,7 +173,7 @@
 						"instafleeOnDamageChance": 1,
 						"whenInEmotionState": "fleeondamage",
 						"animationSpeed": 2,
-						"movespeed": 0.016
+						"movespeed": 0.02
 					}
 				]
 			},

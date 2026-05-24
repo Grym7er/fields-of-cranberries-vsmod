@@ -184,7 +184,8 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
         private void AllocateSpiderToBush(Entity spider, BlockPos bushPos)
         {
             #if DEBUG
-            Console.WriteLine("Allocating spider to bush at {0}", bushPos);
+            Block block = sapi.World.BlockAccessor.GetBlock(bushPos);
+            Api.World.Logger.Audit("Allocating spider to {1} bush at {0}", bushPos, block.Variant["type"]);
             #endif
             
             spider.WatchedAttributes.SetBlockPos("berrybushpos", bushPos);
@@ -220,7 +221,19 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
             #endif
 
             return;
+        }
+
+        public override void OnBlockRemoved()
+        {
+            base.OnBlockRemoved();
+            if (!Api.World.Side.IsServer()) return;
             
+            if (MySpiderEntityId != -1)
+            {
+                Entity spider = Api.World.GetEntityById(MySpiderEntityId);
+                spider.WatchedAttributes.RemoveAttribute("berrybushpos");
+                DeallocateSpiderFromBush(spider);
+            }
         }
 
 

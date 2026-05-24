@@ -1,0 +1,363 @@
+{
+	"code": "waterreel",
+	"class": "EntityAgent",
+	"tags": ["inanimate", "vehicle", "habitat-land"],
+	"hitBoxSizeByType": { "*": { "x": 1, "y": 0.2}},	
+	"collisionBoxSizeByType": { "*":{ "x": 1, "y": 0.1}},
+	"canClimb": false,	
+	"fallDamageMultiplier": 0,	
+	"knockbackResistanceByType": {
+		"*": 1},	
+		"weightByType": {
+		"*": 50
+	},
+	"eyeHeightByType": {
+		"*": 1.7},
+	"attributes": {
+		"minGenerationToAllowHealing": 0,
+		"tamedByType": { "*": true },
+		"handbook": {
+			"groupcode": "creaturegroup-waterreel"
+		},
+		"deconstructible": true,
+		"deconstructDrops": [
+			{ "type": "block", "code": "game:debarkedlod-oak-ud", "quantity": 12 },
+			{ "type": "block", "code": "game:log-placed-oak-ud", "quantity": 12 },
+			{ "type": "item", "code": "game:rope", "quantity": 4 },
+			{ "type": "item", "code": "game:resin", "quantity": 4 }
+		]
+	},
+	"behaviorConfigs": {
+		"controlledphysics": { 
+			"stepHeight": 1.2,
+			"stepUpSpeed": 0.2
+		},
+		"floatupwhenstuck": { "onlyWhenDead": true },	
+		"rideableaccessories": {
+			"dropContentsOnDeath": true,
+			"wearableSlotsByType": {"*":[		
+				{"code": "Saddle-{type}","forCategoryCodes": ["cartgrip"],"attachmentPointcode": "MainGripAP","stepParentTo": {"": { "elementName": "MainGrip" }}},
+				{"code": "FrontStorage","forCategoryCodes": ["cartseat", "basket", "lantern", "anvil", "metalpot"],"attachmentPointcode": "FrontStorageAP","stepParentTo": {"": { "elementName": "FrontStorage" }}},		
+				{"code": "MidStorage","forCategoryCodes": ["cartseat","basket", "lantern", "anvil", "metalpot"],"attachmentPointcode": "MidStorageAP","stepParentTo": {"": { "elementName": "MidStorage" }}},	
+				{"code": "BackStorage","forCategoryCodes": ["cartseat", "basket", "lantern", "anvil", "metalpot"],"attachmentPointcode": "BackStorageAP","stepParentTo": {"": { "elementName": "BackStorage" }}},
+				{"code": "LeftStorage","forCategoryCodes": [],"attachmentPointcode": "LeftStorageAP","stepParentTo": {"": { "elementName": "LeftStorage" }}},
+				{"code": "RightStorage","forCategoryCodes": [],"attachmentPointcode": "RightStorageAP","stepParentTo": {"": { "elementName": "RightStorage" }}},
+				{"code": "Light1-{type}","forCategoryCodes": ["cartpostextra"],"attachmentPointcode": "Light1AP","stepParentTo": {"": { "elementName": "Light1" }}}
+				]}
+		},
+		"selectionboxes": {
+			"selectionBoxesByType": {"*":["MainGripAP","FrontStorageAP", "MidStorageAP","BackStorageAP","LeftStorageAP","RightStorageAP", "Light1AP"]}
+		},
+			"gait":{
+			"idleGaits": { "Land": "idle", "Sea": "swimidle" },
+			"gaits":[
+				{
+					"code": "walkback",	
+					"animation": "walk",
+					"moveSpeedMultiplier": 1,
+					"weight": 20,
+					"blendMode": "average",			
+					"movespeed": 0.022,
+					"backwards": true,
+					"yawMultiplier": 1,
+					"sound": "game:effect/gliding"
+				},				
+				{
+					"code": "idle",
+					"weight": 10,
+					"yawMultiplier": 1
+				},				
+				{
+					"code": "walk",
+					"animation": "walk",
+					"moveSpeedMultiplier": 1,
+					"weight": 20,
+					"blendMode": "average",				
+					"movespeed": 0.02,
+					"yawMultiplier": 1,
+					"sound": "game:effect/gliding"
+				},				
+				{
+					"code": "sprint",
+					"animation": "sprint",
+					"moveSpeedMultiplier": 1,
+					"weight": 10,
+					"blendMode": "average",				
+					"movespeed": 0.05,
+					"yawMultiplier": 1,
+					"fallbackGaitCode": "idle",
+					"sound": "game:effect/gliding"
+				},				
+				{
+					"code": "jump",		
+					"animation": "walk",
+					"moveSpeedMultiplier": 1,
+					"weight": 50,
+					"blendMode": "average",	
+					"movespeed": 0.05,
+					"yawMultiplier": 1,
+					"sound": "game:effect/gliding"
+				},				
+				{
+					"code": "swim",
+					"animation": "walk",
+					"environment": "Sea",
+					"animationSpeed": 0.5,
+					"moveSpeedMultiplier": 1,
+					"weight": 10,
+					"blendMode": "average",
+					"yawMultiplier": 1,					
+					"movespeed": 0.02,
+					"sound": "wheeled/raft-moving"
+				},				
+				{
+					"code": "swimback",
+					"animation": "walk",
+					"environment": "Sea",
+					"animationSpeed": 0.5,
+					"moveSpeedMultiplier": 1,
+					"weight": 10,
+					"blendMode": "average",
+					"backwards": true,
+					"yawMultiplier": 1,					
+					"movespeed": 0.02,
+					"fallbackGaitCode": "idle",
+					"sound": "wheeled/raft-moving"
+				},				
+				{
+					"code": "jog",
+					"animation": "jog",
+					"moveSpeedMultiplier": 1,
+					"weight": 20,
+					"blendMode": "average",				
+					"movespeed": 0.035,
+					"yawMultiplier": 1,
+					"sound": "game:effect/gliding"
+				},
+				{
+					"code": "swimidle",
+					"moveSpeedMultiplier": 1,
+					"animation": "walk",
+					"animationSpeed": 0,
+					"movespeed": 0.0,
+					"environment": "Sea",
+					"weight": 10,
+					"blendMode": "Average"
+				}
+			]},
+		"rideable": {
+			"interactMountAnySeat": false,
+			"seats": [
+				{ "apName": "Rider", "selectionBox": "MainGripAP", "bodyYawLimit": 0.3, "controllable": true,				
+					"mountOffsetByType": { "*": {"x":-0.9,"y":-1.4,"z":0} } }
+			],
+			"rideableGaitOrder": {
+				"Land": ["walkback", "idle", "walk", "jog", "sprint"],
+				"Sea": ["swimback", "swimidle", "swim"]
+			},
+			"controls": {
+				"idle": {
+					"riderAnim": {
+						"animation": "pushsled-idle",
+						"animationSpeed": 0.00000001,
+						"weight": 1,
+						"withFpVariant": true,
+						"blendMode": "average"
+					}
+				},
+				"walk": {
+					"riderAnim": {
+						"animation": "pushsled-walk",
+						"animationSpeed": 1.3,
+						"weight": 1,
+						"withFpVariant": true,
+						"blendMode": "average"
+					}
+				},
+				"jog": {
+					"riderAnim": {
+						"animation": "pushsled-jog",
+						"animationSpeed": 1.7,
+						"weight": 1,
+						"withFpVariant": true,
+						"blendMode": "average"
+					},
+					"passengerAnim": {
+            			"animation": "sitflooridle",
+            			"animationSpeed": 1,
+            			"weight": 2,
+            			"withFpVariant": false,
+            			"blendMode": "Average"
+          			}
+				},
+				"sprint": {
+					"riderAnim": {
+						"animation": "pushsled-sprint",
+						"animationSpeed": 1.5,
+						"weight": 1.6,
+						"withFpVariant": true,
+						"blendMode": "average"
+					}
+				},
+				"walkback": {
+					"riderAnim": {
+						"animation": "pushsled-walkback",
+						"animationSpeed": 1.5,
+						"weight": 1,
+						"withFpVariant": true,
+						"blendMode": "average"
+					}
+				},
+				"jump": {
+					"riderAnim": {
+						"animation": "jump",
+						"animationSpeed": 1,
+						"weight": 1,
+						"withFpVariant": true,
+						"blendMode": "average"
+					}
+				},
+				"swim": {
+					"riderAnim": {
+						"animation": "pushsled-walk",
+						"animationSpeed": 0.5,
+						"weight": 1,
+						"withFpVariant": true,
+						"blendMode": "average"
+					}
+				},
+				"swimback": {
+					"riderAnim": {
+						"animation": "pushsled-walk",
+						"animationSpeed": 0.5,
+						"weight": 1,
+						"withFpVariant": true,
+						"blendMode": "average"
+					}
+				},
+				"swimidle": {
+					"riderAnim": {
+						"animation": "pushsled-walk",
+						"animationSpeed": 0,
+						"weight": 1,
+						"withFpVariant": true,
+						"blendMode": "average"
+					}
+				}
+			}			
+		},
+		"ownable": {
+			"groupCode": "waterreel"
+		}
+	},
+	"drops": [],
+	"client": {
+		"PitchStep": false,
+		"renderer": "Shape",
+		"shapeByType": {
+			"*": { "base": "entity/nonliving/waterreel" }
+		},
+	"texturesByType": {
+		"*": {
+		"bituminous": { "base": "game:block/coal/bituminous"},
+		"iron1": { "base": "game:block/metal/sheet/iron1"},
+		"top": { "base": "game:block/wood/debarked/ebony"},
+		"wood": { "base": "game:block/wood/planks/generic"},
+		"oak1": { "base": "game:block/wood/planks/oak1"}
+	}				
+	},
+		"sizeByType": {
+			"*": 1
+		},
+		"behaviors": [
+			{"code": "repulseagents", "movable":  false },
+			{ "code": "mortallywoundable"},
+			{"code": "controlledphysics"},
+			{ "code": "interpolateposition" },
+			{ "code": "selectionboxes", "enabledByType": { "*": true},"minGeneration": 0 },
+			{ "code": "ownable", "enabledByType": { "*": true},"minGeneration": 0 },
+			{ "code": "rideableaccessories", "enabledByType": { "*": true},"minGeneration": 0 },
+			{ "code": "gait" },
+			{ "code": "rideable", "enabledByType": {"*": true},"minGeneration": 0 },
+			{
+				"code": "ropetieable",
+				"enabledByType": { "*": false }
+			}
+		],
+		"animations": [
+			{"code": "idle","animation": "idle","animationSpeed": 0.5,"blendMode": "addAverage","easeOutSpeed": 4,"triggeredBy": { "defaultAnim": true }},
+			{"code": "fly","animation": "walk","animationSpeed": 2.2,"weight": 10,"blendMode": "addAverage"},
+			{"code": "walk","animation": "walk","easeInSpeed": 10,"supressDefaultAnimation": true,"blendMode": "average"},
+			{"code": "jog","animation": "jog","easeInSpeed": 10,"supressDefaultAnimation": true,"blendMode": "average"},
+			{"code": "sprint","animation": "walk","easeInSpeed": 0.1,"easeOutSpeed": 0.5,"blendMode": "average"},
+			{"code": "walkback","animation": "walk","easeInSpeed": 20,"easeOutSpeed": 20,"weight": 5,"blendMode": "average"},
+			{"code": "jump","animation": "walk","supressDefaultAnimation": true,"blendMode": "average"},
+			{"code": "sleep","animation": "idle","easeInSpeed": 2,"easeOutSpeed": 2,"weight": 5,"blendMode": "average"}
+
+		
+		]
+	},
+	"server": {
+		"attributes": {
+			"pathfinder": {
+				"minTurnAnglePerSec": 0,
+				"maxTurnAnglePerSecByType": { "*": 720}
+			}
+		},
+		"behaviors": [
+			{ "code": "selectionboxes", "enabledByType": { "*": true},"minGeneration": 0 },
+			{ "code": "controlledphysics"},
+			{ "code": "ownable", "enabledByType": { "*": true},"minGeneration": 0 },
+			{ "code": "rideableaccessories", "enabledByType": { "*": true },"minGeneration": 0 },
+			{ "code": "gait" },
+			{ "code": "rideable", "enabledByType": { "*": true},"minGeneration": 0 },
+			{ "code": "repulseagents", "movable":  false },			
+			{
+				"code": "taskai",
+				"aiCreatureType": "LandCreature",
+				"aitasks": [
+					{
+						"code": "cometoowner",
+						"priority": 1,
+						"animationSpeed": 1.35,
+						"movespeed": 0.5,
+						"__allowTeleport": true,
+						"teleportMaxRange": 1000,
+						"teleportAfterRange": 200,
+						"teleportToRange": 25
+					},
+					{
+						"code": "idle",
+						"animation": "idle",
+						"priority": 1.15,
+						"minduration": 20,
+						"maxduration": 800000,
+						"mincooldown": 2000,
+						"maxcooldown": 400000,
+						"animationSpeed": 0.3,
+						"duringDayTimeFramesByType": {
+							"*": [
+								{
+									"fromHour": 1,
+									"toHour": 24
+								}
+							]
+						},
+						"stopOnNearbyEntityCodes": [ "player" ],
+						"stopRange": 5,
+						"stopOnHurt": true
+					}
+				]
+			},
+			{
+				"code": "ropetieable",
+				"enabledByType": { "*": false }
+			},
+			{ "code": "entitystatetags" }
+
+ ]},
+	"sounds": {
+
+
+	}
+}
