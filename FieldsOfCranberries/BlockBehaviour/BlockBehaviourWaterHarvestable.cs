@@ -13,7 +13,7 @@ namespace FieldsOfCranberries.WaterHarvestableBehavior
 {
     public class BlockBehaviorWaterHarvestable : BlockBehavior
     {
-        
+
         public BlockBehaviorWaterHarvestable(Block block) : base(block)
         {
 
@@ -34,6 +34,20 @@ namespace FieldsOfCranberries.WaterHarvestableBehavior
                 beBehaviourWaterHarvestable.TryDropBerries();
                 
             }
+        }
+
+        public override string GetPlacedBlockInfo(IWorldAccessor world, BlockPos pos, IPlayer forPlayer)
+        {
+
+            var beBehaviourWaterHarvestable = block.GetBEBehavior<BEBehaviourWaterHarvestable>(pos);
+            if (beBehaviourWaterHarvestable == null || beBehaviourWaterHarvestable.MySpiderEntityId == -1) return null;
+
+
+            if (beBehaviourWaterHarvestable.MySpiderEntityId != -1)
+            {
+                return Lang.Get("fieldsofcranberries:spideronbush-tooltip") + "\n";
+            }
+            return null;
         }
         
     }

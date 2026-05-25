@@ -8,8 +8,13 @@ using FieldsOfCranberries.FOCEntityBehaviors;
 
 namespace FieldsOfCranberries
 {
+
+    
     public class FieldsOfCranberriesModSystem : ModSystem
     {
+
+        public bool WildCraftFruitActive { get; private set; } = false;
+   
         // Called on server and client  
         public override void StartPre(ICoreAPI api)
         {
@@ -18,6 +23,17 @@ namespace FieldsOfCranberries
             api.RegisterBlockBehaviorClass("WaterHarvestable", typeof(BlockBehaviorWaterHarvestable));
             api.RegisterBlockEntityBehaviorClass("WaterHarvestable", typeof(BEBehaviourWaterHarvestable));
             api.RegisterEntityBehaviorClass("trackberrybush", typeof(EntitySpiderTrackBerryBush));
+        }
+
+        public override void Start(ICoreAPI api)
+        {
+            base.Start(api);
+
+            WildCraftFruitActive = api.ModLoader.IsModEnabled("wildcraftfruit");
+
+            if (WildCraftFruitActive) {
+                Mod.Logger.Notification("WildCraftFruit mod is active, enabling custom berry bush behavior");
+            }
         }
 
 
