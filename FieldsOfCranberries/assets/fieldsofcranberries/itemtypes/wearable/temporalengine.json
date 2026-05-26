@@ -1,0 +1,74 @@
+{
+	"code": "simpletemporalengine",
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [
+				"oak"
+			]
+		}
+	],
+	"attributesByType": {
+		"*simpletemporalengine*": {
+			"attachableToEntity": {
+				"categoryCodeByType": {
+					"*simpletemporalengine*": "temporalengine"
+				},
+				"attachedShapeBySlotCodeByType": {
+					"*": {
+						"*simpletemporalengine*": { "base": "item/wearable/simpletemporalengine" }
+					}
+				}
+			},
+			"controlSchemeByType": {
+				"*": "Hold"
+			},
+			"isSaddleByType": {
+				"simpletemporalengine-*": true
+			},
+			"isBridleByType": {
+				"simpletemporalengine-*": true
+			},
+			"interactPassthroughByType": {
+				"simpletemporalengine-*": true
+			}
+		}
+	},
+	"behaviorsByType": {
+		"*simpletemporalengine*": [
+		]
+	},
+	"shapeByType": {
+		"*simpletemporalengine-*": { "base": "item/wearable/simpletemporalengine" }
+	},
+	"heldTpIdleAnimationByType": {
+		"*": "holdbothhands"
+	},
+	"maxStackSize": 1,
+	"creativeinventory": {
+		"general": [ "*" ]
+	},
+	"renderAlphaTest": 0.25,
+	"tpHandTransform": {
+		"translation": { "x": -1.15, "y": -2.1, "z": -1.5 },
+		"rotation": { "x": -180, "y": -110, "z": 18 }
+	  },
+	  "groundTransform": {
+		"translation": { "x": 0, "y": -0.46, "z": 0 },
+		"rotation": { "x": 90, "y": 0, "z": 0 },
+		"origin": { "x": 0.5, "y": 0.5, "z": 0.5299 },
+		"scale": 4.58
+	  },
+	"guiTransformByType": {
+
+		"*simpletemporalengine-*": {
+			"translation": { "x": -13, "y": 21, "z": 0 },
+			"rotation": { "x": -43, "y": -39, "z": 0 },
+			"origin": { "x": 0.19, "y": 0.57, "z": 0.12 },
+			"scale": 2.16
+		  
+	}
+	}
+}
+
+

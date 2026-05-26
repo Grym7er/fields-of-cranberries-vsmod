@@ -35,18 +35,13 @@
 		"floatupwhenstuck": { "onlyWhenDead": true },	
 		"rideableaccessories": {
 			"dropContentsOnDeath": true,
-			"wearableSlotsByType": {"*":[		
-				{"code": "Saddle-{type}","forCategoryCodes": ["cartgrip"],"attachmentPointcode": "MainGripAP","stepParentTo": {"": { "elementName": "MainGrip" }}},
-				{"code": "FrontStorage","forCategoryCodes": ["cartseat", "basket", "lantern", "anvil", "metalpot"],"attachmentPointcode": "FrontStorageAP","stepParentTo": {"": { "elementName": "FrontStorage" }}},		
-				{"code": "MidStorage","forCategoryCodes": ["cartseat","basket", "lantern", "anvil", "metalpot"],"attachmentPointcode": "MidStorageAP","stepParentTo": {"": { "elementName": "MidStorage" }}},	
-				{"code": "BackStorage","forCategoryCodes": ["cartseat", "basket", "lantern", "anvil", "metalpot"],"attachmentPointcode": "BackStorageAP","stepParentTo": {"": { "elementName": "BackStorage" }}},
-				{"code": "LeftStorage","forCategoryCodes": [],"attachmentPointcode": "LeftStorageAP","stepParentTo": {"": { "elementName": "LeftStorage" }}},
-				{"code": "RightStorage","forCategoryCodes": [],"attachmentPointcode": "RightStorageAP","stepParentTo": {"": { "elementName": "RightStorage" }}},
-				{"code": "Light1-{type}","forCategoryCodes": ["cartpostextra"],"attachmentPointcode": "Light1AP","stepParentTo": {"": { "elementName": "Light1" }}}
+			"wearableSlotsByType": {"*":[	
+				{"code": "Grip","forCategoryCodes": ["grip"],"attachmentPointcode": "HandleGripAP","stepParentTo": {"": { "elementName": "handle_horizontal" }}},
+				{"code": "TemporalEngine","forCategoryCodes": ["temporalengine"],"attachmentPointcode": "TemporalEngineAP","stepParentTo": {"": { "elementName": "horizontal_right2" }}}
 				]}
 		},
 		"selectionboxes": {
-			"selectionBoxesByType": {"*":["MainGripAP","FrontStorageAP", "MidStorageAP","BackStorageAP","LeftStorageAP","RightStorageAP", "Light1AP"]}
+			"selectionBoxesByType": {"*":["HandleGripAP", "TemporalEngineAP"]}
 		},
 			"gait":{
 			"idleGaits": { "Land": "idle", "Sea": "swimidle" },
@@ -148,8 +143,8 @@
 		"rideable": {
 			"interactMountAnySeat": false,
 			"seats": [
-				{ "apName": "Rider", "selectionBox": "MainGripAP", "bodyYawLimit": 0.3, "controllable": true,				
-					"mountOffsetByType": { "*": {"x":-0.9,"y":-1.4,"z":0} } }
+				{ "apName": "Rider", "selectionBox": "HandleGripAP", "bodyYawLimit": 0.3, "controllable": true,				
+					"mountOffsetByType": { "*": {"x":0.3,"y":-1.4,"z":1} } }
 			],
 			"rideableGaitOrder": {
 				"Land": ["walkback", "idle", "walk", "jog", "sprint"],
