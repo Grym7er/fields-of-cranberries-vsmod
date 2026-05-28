@@ -1,0 +1,42 @@
+[
+    {
+        "op": "addmerge",
+        "path": "/behaviorsByType/*-cranberry-ripe",
+        "value": [
+            {
+                "name": "WaterHarvestable"
+            }
+        ],
+        "file": "wildcraftfruit:blocktypes/plant/berry/groundberryplant.json"
+    },
+    {
+        "op": "addmerge",
+        "path": "/behaviorsByType/*-cranberry-empty",
+        "value": [
+            {
+                "name": "WaterHarvestable"
+            }
+        ],
+        "file": "wildcraftfruit:blocktypes/plant/berry/groundberryplant.json"
+    },
+    {
+        "op": "addmerge",
+        "path": "/behaviorsByType/*-cranberry-flowering",
+        "value": [
+            {
+                "name": "WaterHarvestable"
+            }
+        ],
+        "file": "wildcraftfruit:blocktypes/plant/berry/groundberryplant.json"
+    },
+    {
+        "op": "addmerge",
+        "path": "/entityBehaviors",
+        "value": [
+            {
+                "name": "WaterHarvestable"
+            }
+        ],
+        "file": "wildcraftfruit:blocktypes/plant/berry/groundberryplant.json"
+    }
+]

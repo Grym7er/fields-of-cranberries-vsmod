@@ -11,7 +11,6 @@ using Vintagestory.API.Server;
 using Vintagestory.API.Util;
 using FieldsOfCranberries.WaterHarvestableBehavior;
 using Vintagestory.GameContent;
-
 #nullable disable
 namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
 {
@@ -24,6 +23,7 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
         protected ICoreServerAPI sapi;
         private BEBehaviorFruitingBush behfruitingBush;
         protected BlockBehaviorFruitingBush bhBush;
+        private bool WildCraftFruitActive = false;
         public bool IsInWater{
             get{
                 return isInWater;
@@ -32,7 +32,8 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
                 isInWater = value;
             }
         }
-        private long MySpiderEntityId = -1;
+        public long MySpiderEntityId { get; private set; } = -1;
+   
 
         AssetLocation entitySpawnableSpider = new AssetLocation("fieldsofcranberries:spider-wolf");
 
@@ -66,12 +67,20 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
             base.Initialize(api, properties);
             capi = api as ICoreClientAPI;
             sapi = api as ICoreServerAPI;
-            bhBush = Block.GetBehavior<BlockBehaviorFruitingBush>();
 
-            behfruitingBush = Blockentity.GetBehavior<BEBehaviorFruitingBush>();
+            
+            var modSystem = api.ModLoader.GetModSystem<FieldsOfCranberriesModSystem>();
+            WildCraftFruitActive = modSystem.WildCraftFruitActive;
+
+            if (!WildCraftFruitActive)
+            {
+                bhBush = Block.GetBehavior<BlockBehaviorFruitingBush>();
+                behfruitingBush = Blockentity.GetBehavior<BEBehaviorFruitingBush>();
+            }else{
+
+            }
 
         }
-
         public bool CheckIfInWater()
         {
             if (!Api.World.Side.IsServer()) return false;
@@ -99,17 +108,12 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
             return false;
         }
 
-        public override void GetBlockInfo(IPlayer forPlayer, StringBuilder dsc)
-        {
-            base.GetBlockInfo(forPlayer, dsc);
-            if (MySpiderEntityId != -1)
-            {
-                dsc.AppendLine(Lang.Get("fieldsofcranberries:spideronbush-tooltip"));
-            }
-        }
+
 
         float[] dropRates = [0f, 0.5f, 1f, 1.5f];
-        public void TryDropBerries()
+
+
+        private void TryDropBerriesVanilla()
         {
             if (!Api.World.Side.IsServer()) return;
             if (behfruitingBush.BState.Growthstate is not EnumFruitingBushGrowthState.Ripe) return;
@@ -145,14 +149,57 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
             TrySpawnSpider(Pos);
 
             return;
+
+        }
+        private void TryDropBerriesHerbarium()
+        {
+            if (Block?.EntityClass == null)
+            {
+                Api.World.BlockAccessor.RemoveBlockEntity(Pos);
+                return;
+            }
+
+            AssetLocation loc = Block.CodeWithVariant("state", "empty");
+            if (!loc.Valid)
+            {
+                Api.World.BlockAccessor.RemoveBlockEntity(Pos);
+
+                return;
+            }
+
+            Block nextBlock = Api.World.GetBlock(loc);
+            if (nextBlock?.Code == null) return;
+
+            var bbh = Block.GetCollectibleBehavior<BlockBehaviorHarvestable>(true);
+            float spiderBuff = 0.0f;
+
+            if (MySpiderEntityId != -1) spiderBuff = 0.15f; // TODO: Make this a configurable value
+
+            bbh?.harvestedStacks?.Foreach(harvestedStack => { Api.World.SpawnItemEntity(harvestedStack?.GetNextItemStack(1+spiderBuff), Pos); });
+            Api.World.PlaySoundAt(bbh?.harvestingSound, Pos, 0);
+
+            Api.World.BlockAccessor.ExchangeBlock(nextBlock.BlockId, Pos);
+            TrySpawnSpider(Pos);
+            Blockentity.MarkDirty(true);
+
+            return;
+        }
+        
+        public void TryDropBerries()
+        {
+            if (WildCraftFruitActive)
+            {
+                TryDropBerriesHerbarium();
+            }
+            else
+            {
+                TryDropBerriesVanilla();
+            }
         }
 
         public void TrySpawnSpider(BlockPos spawnPos)
         {
             if (!Api.World.Side.IsServer()) return;
-            #if DEBUG
-            Console.WriteLine("Trying to spawn spider at {0}", spawnPos);
-            #endif
 
             if (MySpiderEntityId != -1) return; //Don't spawn spider if there is already one on the bush
             
@@ -187,18 +234,11 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
         }
 
         private void AllocateSpiderToBush(Entity spider, BlockPos bushPos)
-        {
-            #if DEBUG
-            Block block = sapi.World.BlockAccessor.GetBlock(bushPos);
-            Api.World.Logger.Audit("Allocating spider to {1} bush at {0}", bushPos, block.Variant["type"]);
-            #endif
-            
+        {            
             spider.WatchedAttributes.SetBlockPos("berrybushpos", bushPos);
             MySpiderEntityId = spider.EntityId;
             Blockentity.MarkDirty(true);
-            #if DEBUG
-            Console.WriteLine("Allocated spider to bush at {0}", bushPos);
-            #endif
+
         }
 
         public void DeallocateSpiderFromBush(Entity spider)
@@ -222,7 +262,10 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
             CheckIfInWater();
 
             #if DEBUG
-            setGrowthState(EnumFruitingBushGrowthState.Ripe); // Debug Only
+            if (!WildCraftFruitActive)
+            {
+                setGrowthState(EnumFruitingBushGrowthState.Ripe); // Debug Only
+            }
             #endif
 
             return;
