@@ -1,0 +1,62 @@
+{
+	"code": "reelgrip",
+	"attributesByType": {
+		"*reelgrip*": {
+			"attachableToEntity": {
+				"categoryCodeByType": {
+					"*reelgrip*": "reelgrip"
+				},
+				"attachedShapeBySlotCodeByType": {
+					"*": {
+						"*reelgrip*": { "base": "item/wearable/reelgrip" }
+					}
+				}
+			},
+			"controlSchemeByType": {
+				"*": "Hold"
+			},
+			"isSaddleByType": {
+				"reelgrip*": true
+			},
+			"isBridleByType": {
+				"reelgrip*": true
+			},
+			"interactPassthroughByType": {
+				"reelgrip*": true
+			}
+		}
+	},
+	"behaviorsByType": {
+		"*reelgrip*": [
+		]
+	},
+	"shapeByType": {
+		"*reelgrip*": { "base": "item/wearable/reelgrip" }
+	},
+	"heldTpIdleAnimationByType": {
+		"*": "holdbothhands"
+	},
+	"maxStackSize": 1,
+	"creativeinventory": {
+		"general": [ "*" ]
+	},
+	"renderAlphaTest": 0.25,
+	"guiTransform": {
+		"translation": { "x": 29.883825, "y": 30.503418, "z": 0 },
+		"rotation": { "x": -69.02225, "y": -51.168686, "z": -56.81288 },
+		"scale": 2.55
+	  },
+	  "tpHandTransform": {
+		"translation": { "x": -0.19156167, "y": -0.7437428, "z": -0.8734278 },
+		"rotation": { "x": -172.6438, "y": 159.08308, "z": -44.99277 },
+		"scale": 0.67
+	  },
+	  "groundTransform": {
+		"translation": { "x": 0, "y": -0.056330796, "z": 0 },
+		"rotation": { "x": 178.58688, "y": 9.594819, "z": 33.316208 },
+		"origin": { "x": 0.5, "y": 0.5, "z": 0.5299 },
+		"scale": 3
+	  }
+}
+
+

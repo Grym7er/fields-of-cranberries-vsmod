@@ -36,12 +36,11 @@
 		"rideableaccessories": {
 			"dropContentsOnDeath": true,
 			"wearableSlotsByType": {"*":[	
-				{"code": "Grip","forCategoryCodes": ["grip"],"attachmentPointcode": "HandleGripAP","stepParentTo": {"": { "elementName": "handle_horizontal" }}},
-				{"code": "TemporalEngine","forCategoryCodes": ["temporalengine"],"attachmentPointcode": "TemporalEngineAP","stepParentTo": {"": { "elementName": "horizontal_right2" }}}
+				{"code": "Grip","forCategoryCodes": ["reelgrip"],"attachmentPointcode": "HandleGripAP","stepParentTo": {"": { "elementName": "handle_horizontal" }}}
 				]}
 		},
 		"selectionboxes": {
-			"selectionBoxesByType": {"*":["HandleGripAP", "TemporalEngineAP"]}
+			"selectionBoxesByType": {"*":["HandleGripAP"]}
 		},
 			"gait":{
 			"idleGaits": { "Land": "idle", "Sea": "swimidle" },
@@ -144,7 +143,7 @@
 			"interactMountAnySeat": false,
 			"seats": [
 				{ "apName": "Rider", "selectionBox": "HandleGripAP", "bodyYawLimit": 0.3, "controllable": true,				
-					"mountOffsetByType": { "*": {"x":0.3,"y":-1.4,"z":1} } }
+					"mountOffsetByType": { "*": {"x":0.3,"y":-1.15,"z":1.35} } }
 			],
 			"rideableGaitOrder": {
 				"Land": ["walkback", "idle", "walk", "jog", "sprint"],

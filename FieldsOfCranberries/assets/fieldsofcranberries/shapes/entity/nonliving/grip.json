@@ -1,0 +1,283 @@
+{
+	"editor": {
+		"backDropShape": "/home/dewet/Documents/projects/VintageStoryMods/fields_of_cranberries_vsmod/FieldsOfCranberries/assets/fieldsofcranberries/shapes/entity/nonliving/waterreel",
+		"collapsedPaths": ",Root/right2,Root/right",
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"rope": "item/resource/rope"
+	},
+	"elements": [
+		{
+			"name": "Cube16",
+			"from": [ 0.0, 0.0, 0.0 ],
+			"to": [ 0.0, 0.0, 0.0 ],
+			"rotationOrigin": [ 0.0, 0.0, 8.0 ],
+			"faces": {
+				"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+				"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+				"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+				"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+				"up": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+				"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+			},
+			"children": [
+				{
+					"name": "right2",
+					"from": [ -27.0, -20.0, 8.1 ],
+					"to": [ -27.0, -20.0, 8.1 ],
+					"rotationOrigin": [ 0.0, 0.0, 8.1 ],
+					"faces": {
+						"north": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"east": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"south": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"west": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"up": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"down": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+					},
+					"children": [
+						{
+							"name": "Cube9",
+							"from": [ 27.9, 19.5, 2.5 ],
+							"to": [ 30.1, 20.5, 2.9 ],
+							"rotationOrigin": [ 27.9, 19.5, 2.5 ],
+							"rotationZ": 30.0,
+							"faces": {
+								"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false },
+								"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false },
+								"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false },
+								"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false },
+								"up": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false },
+								"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false }
+							}
+						},
+						{
+							"name": "Cube10",
+							"from": [ 27.8, 19.6, 2.9 ],
+							"to": [ 30.0, 20.6, 3.3 ],
+							"rotationOrigin": [ 27.8, 19.6, 2.9 ],
+							"rotationY": 5.0,
+							"rotationZ": 30.0,
+							"faces": {
+								"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false },
+								"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"up": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] }
+							}
+						},
+						{
+							"name": "Cube11",
+							"from": [ 27.9, 19.6, 3.0 ],
+							"to": [ 30.1, 20.6, 3.4 ],
+							"rotationOrigin": [ 27.9, 19.6, 3.0 ],
+							"rotationX": 10.0,
+							"rotationZ": 30.0,
+							"faces": {
+								"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false },
+								"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"up": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] }
+							}
+						},
+						{
+							"name": "Cube12",
+							"from": [ 27.9, 19.6, 3.6 ],
+							"to": [ 30.1, 20.6, 4.0 ],
+							"rotationOrigin": [ 27.9, 19.6, 3.6 ],
+							"rotationZ": 30.0,
+							"faces": {
+								"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false },
+								"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"up": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] }
+							}
+						},
+						{
+							"name": "Cube13",
+							"from": [ 27.7, 19.8, 4.0 ],
+							"to": [ 29.9, 20.8, 4.4 ],
+							"rotationOrigin": [ 27.7, 19.8, 4.0 ],
+							"rotationY": -5.0,
+							"rotationZ": 25.0,
+							"faces": {
+								"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false },
+								"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"up": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] }
+							}
+						},
+						{
+							"name": "Cube14",
+							"from": [ 27.9, 19.6, 4.7 ],
+							"to": [ 30.1, 20.6, 5.1 ],
+							"rotationOrigin": [ 27.9, 19.6, 4.7 ],
+							"rotationX": -5.0,
+							"rotationY": 5.0,
+							"rotationZ": 35.0,
+							"faces": {
+								"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false },
+								"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"up": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] }
+							}
+						},
+						{
+							"name": "Cube15",
+							"from": [ 27.9, 19.6, 5.0 ],
+							"to": [ 30.1, 20.6, 5.4 ],
+							"rotationOrigin": [ 27.9, 19.6, 5.0 ],
+							"rotationZ": 35.0,
+							"faces": {
+								"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false },
+								"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"up": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] }
+							}
+						}
+					]
+				},
+				{
+					"name": "right",
+					"from": [ -27.0, -20.0, 0.0 ],
+					"to": [ -27.0, -20.0, 0.0 ],
+					"faces": {
+						"north": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"east": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"south": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"west": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"up": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"down": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+					},
+					"children": [
+						{
+							"name": "Cube2",
+							"from": [ 27.9, 19.5, 2.5 ],
+							"to": [ 30.1, 20.5, 2.9 ],
+							"rotationOrigin": [ 27.9, 19.5, 2.5 ],
+							"rotationZ": 30.0,
+							"faces": {
+								"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false },
+								"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false },
+								"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false },
+								"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false },
+								"up": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false },
+								"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false }
+							}
+						},
+						{
+							"name": "Cube3",
+							"from": [ 27.8, 19.6, 2.9 ],
+							"to": [ 30.0, 20.6, 3.3 ],
+							"rotationOrigin": [ 27.8, 19.6, 2.9 ],
+							"rotationY": 5.0,
+							"rotationZ": 30.0,
+							"faces": {
+								"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false },
+								"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"up": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] }
+							}
+						},
+						{
+							"name": "Cube4",
+							"from": [ 27.9, 19.6, 3.0 ],
+							"to": [ 30.1, 20.6, 3.4 ],
+							"rotationOrigin": [ 27.9, 19.6, 3.0 ],
+							"rotationX": 10.0,
+							"rotationZ": 30.0,
+							"faces": {
+								"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false },
+								"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"up": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] }
+							}
+						},
+						{
+							"name": "Cube5",
+							"from": [ 27.9, 19.6, 3.6 ],
+							"to": [ 30.1, 20.6, 4.0 ],
+							"rotationOrigin": [ 27.9, 19.6, 3.6 ],
+							"rotationZ": 30.0,
+							"faces": {
+								"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false },
+								"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"up": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] }
+							}
+						},
+						{
+							"name": "Cube6",
+							"from": [ 27.9, 19.6, 4.1 ],
+							"to": [ 30.1, 20.6, 4.5 ],
+							"rotationOrigin": [ 27.9, 19.6, 4.1 ],
+							"rotationY": 5.0,
+							"rotationZ": 35.0,
+							"faces": {
+								"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false },
+								"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"up": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] }
+							}
+						},
+						{
+							"name": "Cube7",
+							"from": [ 28.0, 19.6, 4.3 ],
+							"to": [ 30.2, 20.6, 4.7 ],
+							"rotationOrigin": [ 28.0, 19.6, 4.3 ],
+							"rotationX": 5.0,
+							"rotationY": -5.0,
+							"rotationZ": 35.0,
+							"faces": {
+								"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false },
+								"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"up": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] }
+							}
+						},
+						{
+							"name": "Cube8",
+							"from": [ 27.9, 19.6, 5.0 ],
+							"to": [ 30.1, 20.6, 5.4 ],
+							"rotationOrigin": [ 27.9, 19.6, 5.0 ],
+							"rotationZ": 35.0,
+							"faces": {
+								"north": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false },
+								"east": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"south": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"west": { "texture": "#rope", "uv": [ 0.0, 0.0, 2.0, 4.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"up": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+								"down": { "texture": "#rope", "uv": [ 0.0, 0.0, 8.0, 2.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] }
+							}
+						}
+					]
+				}
+			]
+		}
+	]}

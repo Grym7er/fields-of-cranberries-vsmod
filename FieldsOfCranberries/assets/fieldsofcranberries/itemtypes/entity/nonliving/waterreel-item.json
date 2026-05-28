@@ -7,7 +7,7 @@
   },
   "storageFlags": 2,
   "texturesByType": {
-    "*basic*": {
+    "*": {
       "bituminous": { "base": "game:block/coal/bituminous" },
       "iron1": { "base": "game:block/metal/sheet/iron1h" },
       "top": { "base": "game:block/wood/debarked/ebony" },

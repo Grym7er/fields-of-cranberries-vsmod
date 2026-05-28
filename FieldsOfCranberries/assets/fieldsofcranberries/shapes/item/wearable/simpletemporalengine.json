@@ -14,10 +14,10 @@
 		"temporal": [16,16]
 	},
 	"textures": {
-		"oak": "block/wood/plainoak",
-		"wood": "block/wood/planks/generic",
-		"oak1": "block/wood/planks/oak1",
-		"temporal": "item/resource/temporalgear"
+		"oak": "game:block/wood/plainoak",
+		"wood": "game:block/wood/planks/generic",
+		"oak1": "game:block/wood/planks/oak1",
+		"temporal": "game:item/resource/temporalgear"
 	},
 	"elements": [
 		{
