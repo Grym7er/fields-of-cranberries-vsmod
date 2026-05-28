@@ -113,6 +113,11 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
         {
             if (!Api.World.Side.IsServer()) return;
             if (behfruitingBush.BState.Growthstate is not EnumFruitingBushGrowthState.Ripe) return;
+            if (Block.Variant["type"] != "cranberry") return;
+            if (!CheckIfInWater()) return;
+
+
+
             
 
             float dropRate = getYieldMul();

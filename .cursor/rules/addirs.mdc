@@ -1,0 +1,28 @@
+---
+description: Vintage Story reference directories and context rules
+alwaysApply: true
+---
+
+# Vintage Story reference context
+
+Important external reference directories:
+
+1. `~/Documents/projects/VintageStoryMods/vsapi`
+   - Vintage Story API reference code.
+
+2. `~/Documents/projects/VintageStoryMods/vsessentialsmod`
+   - Vintage Story Essentials mod reference code.
+
+3. `~/Documents/projects/VintageStoryMods/vssurvivalmod`
+   - Vintage Story Survival mod reference code.
+
+4. `~/Games/vintagestory/assets`
+   - Vintage Story JSON assets.
+
+When the user asks about Vintage Story, VS, Vintage Story modding, the Vintage Story API, blocks, items, entities, behaviors, patches, recipes, worldgen, or mod code:
+
+- Inspect directories 1-3 for existing code, APIs, conventions, and examples before proposing code.
+- Prefer patterns already used in `vsessentialsmod` and `vssurvivalmod` when implementing similar functionality.
+- For questions involving JSON assets, blocktypes, itemtypes, shapes, recipes, lang files, patches, or asset paths, inspect directory 4.
+- Do not guess API signatures if they can be verified in `vsapi`.
+- Mention which reference directory informed the answer when relevant.

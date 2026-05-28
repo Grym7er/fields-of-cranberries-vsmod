@@ -18,6 +18,8 @@ namespace FieldsOfCranberries
             api.RegisterBlockBehaviorClass("WaterHarvestable", typeof(BlockBehaviorWaterHarvestable));
             api.RegisterBlockEntityBehaviorClass("WaterHarvestable", typeof(BEBehaviourWaterHarvestable));
             api.RegisterEntityBehaviorClass("trackberrybush", typeof(EntitySpiderTrackBerryBush));
+            api.RegisterEntityBehaviorClass("waterreel", typeof(EntityBehaviorWaterreel));
+            api.RegisterEntityBehaviorClass("sinkinggait", typeof(EntityBehaviorSinkingGait));
         }
 
 
