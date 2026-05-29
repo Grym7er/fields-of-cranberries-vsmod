@@ -24,6 +24,7 @@ namespace FieldsOfCranberries.FOCEntityBehaviors
             base.Initialize(properties, attributes);
         }
 
+
         protected override void Move(float dt)
         {
             if (!entity.Swimming)
@@ -43,7 +44,7 @@ namespace FieldsOfCranberries.FOCEntityBehaviors
                 controls.WalkVector.Mul(CurrentGait.MoveSpeed * GlobalConstants.OverallSpeedMultiplier * CurrentGait.Direction * MoveSpeedModifier);
                 controls.FlyVector.Set(controls.WalkVector);
                 controls.FlyVector.Y = 0;  // no buoyancy
-                
+
             }
         }
     }

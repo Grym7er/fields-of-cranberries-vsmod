@@ -5,7 +5,8 @@ using Vintagestory.API.Server;
 using FieldsOfCranberries.WaterHarvestableBehavior;
 using FieldsOfCranberries.WaterHarvestableBEBehaviour;
 using FieldsOfCranberries.FOCEntityBehaviors;
-
+using HarmonyLib;
+using System.Reflection;
 namespace FieldsOfCranberries
 {
 
@@ -30,7 +31,9 @@ namespace FieldsOfCranberries
         public override void Start(ICoreAPI api)
         {
             base.Start(api);
-
+            var harmony = new Harmony(Mod.Info.ModID);
+            harmony.PatchAll(Assembly.GetExecutingAssembly());
+            Mod.Logger.Notification("[FieldsOfCranberries] Harmony patches applied");
             WildCraftFruitActive = api.ModLoader.IsModEnabled("wildcraftfruit");
 
             if (WildCraftFruitActive) {

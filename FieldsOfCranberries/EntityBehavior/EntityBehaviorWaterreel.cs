@@ -19,11 +19,6 @@ namespace FieldsOfCranberries.FOCEntityBehaviors
 
         }
 
-        public override void AfterInitialized(bool onFirstSpawn)
-        {
-            base.AfterInitialized(onFirstSpawn);
-        }
-
         public override void Initialize(EntityProperties properties, JsonObject attributes)
         {
             base.Initialize(properties, attributes);
@@ -68,15 +63,12 @@ namespace FieldsOfCranberries.FOCEntityBehaviors
             // Third bush pos to harvest: right front
             BlockPos rightPos = forwardPos.AddCopy(rightFacing.Normali);
 
-            Block blockForward = entity.World.BlockAccessor.GetBlock(forwardPos);
-            Block blockLeft = entity.World.BlockAccessor.GetBlock(leftPos);
-            Block blockRight = entity.World.BlockAccessor.GetBlock(rightPos);
-
             List<BlockPos> checkBlockPositions = new List<BlockPos> { forwardPos, leftPos, rightPos };
             foreach (BlockPos checkBlockPosition in checkBlockPositions)
             {
-                
-
+                BEBehaviourWaterHarvestable beBehaviourWaterHarvestable = entity.World.BlockAccessor.GetBlockEntity(checkBlockPosition)?.GetBehavior<BEBehaviourWaterHarvestable>();
+                if (beBehaviourWaterHarvestable == null) continue;
+                beBehaviourWaterHarvestable.TryDropBerries();
 
             }
             

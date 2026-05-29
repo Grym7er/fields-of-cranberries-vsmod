@@ -30,6 +30,7 @@
 		"*": 1.7
 	},
 	"attributes": {
+		"ignoreWaterFlow": true,
 		"minGenerationToAllowHealing": 0,
 		"tamedByType": {
 			"*": true

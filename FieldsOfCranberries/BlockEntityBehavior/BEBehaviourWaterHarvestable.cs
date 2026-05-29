@@ -121,9 +121,6 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
             if (!CheckIfInWater()) return;
 
 
-
-            
-
             float dropRate = getYieldMul();
 
             bhBush.harvestedStacks.Foreach(harvestedStack =>

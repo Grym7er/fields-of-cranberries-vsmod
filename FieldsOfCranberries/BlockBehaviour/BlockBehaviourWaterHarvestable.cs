@@ -20,22 +20,6 @@ namespace FieldsOfCranberries.WaterHarvestableBehavior
         }
 
 
-        public override void OnNeighbourBlockChange(IWorldAccessor world, BlockPos pos, BlockPos neibpos, ref EnumHandling handling)
-        {
-            if (this.block == null) return;
-
-            if (block.Variant["type"] == "cranberry")
-            {
-                BEBehaviourWaterHarvestable beBehaviourWaterHarvestable = block.GetBEBehavior<BEBehaviourWaterHarvestable>(pos);
-                bool shouldDropBerries = beBehaviourWaterHarvestable?.CheckIfWentIntoWater() ?? false;
-
-                if (!shouldDropBerries) return;
-                
-                beBehaviourWaterHarvestable.TryDropBerries();
-                
-            }
-        }
-
         public override string GetPlacedBlockInfo(IWorldAccessor world, BlockPos pos, IPlayer forPlayer)
         {
 
