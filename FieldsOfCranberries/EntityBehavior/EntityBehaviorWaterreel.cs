@@ -38,6 +38,7 @@ namespace FieldsOfCranberries.FOCEntityBehaviors
 
             // Don't do anything if no-one is mounted
             if (!entity.GetBehavior<EntityBehaviorRideable>()?.AnyMounted() ?? false) return;
+            if (!entity.FeetInLiquid) return;
 
             sinceLastTick += deltaTime;
 
@@ -51,10 +52,6 @@ namespace FieldsOfCranberries.FOCEntityBehaviors
 
             
             BlockPos pos = entity.Pos.AsBlockPos;
-
-            BlockPos downPos = pos.DownCopy();
-
-            // Block block = entity.World.BlockAccessor.GetBlock(downPos);
 
             // First bush pos to harvest: middle front
             BlockPos forwardPos = pos.AddCopy(facing.Normali);
