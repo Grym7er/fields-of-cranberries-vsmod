@@ -285,7 +285,12 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
         {
             base.FromTreeAttributes(tree, worldAccessForResolve);
             IsInWater = tree.GetBool("isInWater");
-            MySpiderEntityId = tree.GetLong("mySpiderEntityId");
+            MySpiderEntityId = tree.GetLong("mySpiderEntityId", -1);
+            if (MySpiderEntityId == 0)
+            {
+                // This is just to fix worlds that had the mod installed before the spider ID was added
+                MySpiderEntityId = -1;
+            }
         }
 
         public override void ToTreeAttributes(ITreeAttribute tree)

@@ -43,9 +43,10 @@ namespace FieldsOfCranberries.WaterHarvestableBehavior
             if (beBehaviourWaterHarvestable == null || beBehaviourWaterHarvestable.MySpiderEntityId == -1) return null;
 
 
-            if (beBehaviourWaterHarvestable.MySpiderEntityId != -1)
+            if (block.Variant["type"] == "cranberry") //Removed redundant check for spider ID, which is already done above
             {
-                return Lang.Get("fieldsofcranberries:spideronbush-tooltip") + "\n";
+
+                return Lang.Get("fieldsofcranberries:spideronbush-tooltip") + "\n" + "SpiderID: " + beBehaviourWaterHarvestable.MySpiderEntityId;
             }
             return null;
         }
