@@ -38,7 +38,7 @@ namespace FieldsOfCranberries.WaterHarvestableBehavior
 
         public override string GetPlacedBlockInfo(IWorldAccessor world, BlockPos pos, IPlayer forPlayer)
         {
-
+            if (!world.Config.GetBool("EnableSpiderSpawns", true)) return null; 
             var beBehaviourWaterHarvestable = block.GetBEBehavior<BEBehaviourWaterHarvestable>(pos);
             if (beBehaviourWaterHarvestable == null || beBehaviourWaterHarvestable.MySpiderEntityId == -1) return null;
 
