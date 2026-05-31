@@ -46,7 +46,9 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
         {
             float spiderBuff = 0.0f;
 
-            if (MySpiderEntityId != -1) spiderBuff = 0.15f; // TODO: Make this a configurable value
+            if (MySpiderEntityId != -1) spiderBuff = Api.World.Config.GetFloat("SpiderDropRateBuff", 0.15f);
+
+            Console.WriteLine("SpiderDroprateBuff: {0}", spiderBuff);
 
             if (behfruitingBush.BState.Traits.Contains("heavybearer")) return 1.15f + spiderBuff;
             if (behfruitingBush.BState.Traits.Contains("shybearer")) return 0.85f + spiderBuff;
@@ -170,7 +172,7 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
             var bbh = Block.GetCollectibleBehavior<BlockBehaviorHarvestable>(true);
             float spiderBuff = 0.0f;
 
-            if (MySpiderEntityId != -1) spiderBuff = 0.15f; // TODO: Make this a configurable value
+            if (MySpiderEntityId != -1) spiderBuff = Api.World.Config.GetFloat("SpiderDropRateBuff", 0.15f);
 
             bbh?.harvestedStacks?.Foreach(harvestedStack => { Api.World.SpawnItemEntity(harvestedStack?.GetNextItemStack(1+spiderBuff), Pos); });
             Api.World.PlaySoundAt(bbh?.harvestingSound, Pos, 0);
@@ -197,13 +199,13 @@ namespace FieldsOfCranberries.WaterHarvestableBEBehaviour
         public void TrySpawnSpider(BlockPos spawnPos)
         {
             if (!Api.World.Side.IsServer()) return;
-
+            if (!Api.World.Config.GetBool("EnableSpiderSpawns", true)) return;
             if (MySpiderEntityId != -1) return; //Don't spawn spider if there is already one on the bush
             
             #if DEBUG
             if (Api.World.Rand.NextDouble() < 1.0) // will make it smaller in deployment
             #else
-            if (Api.World.Rand.NextDouble() < 0.05)
+            if (Api.World.Rand.NextDouble() < Api.World.Config.GetFloat("SpiderSpawnChance", 0.05f))
             #endif
             {
                 EntityProperties type = Api.World.GetEntityType(entitySpawnableSpider);

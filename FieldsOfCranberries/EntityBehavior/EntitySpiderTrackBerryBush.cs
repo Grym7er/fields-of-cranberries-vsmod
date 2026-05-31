@@ -28,6 +28,13 @@ namespace FieldsOfCranberries.FOCEntityBehaviors
         public override void AfterInitialized(bool onFirstSpawn)
         {
             base.AfterInitialized(onFirstSpawn);
+
+            if (!entity.World.Config.GetBool("EnableSpiderSpawns", true))
+            {
+                entity.Die(EnumDespawnReason.Removed);
+                
+            }
+            
         }
 
         private void DeAllocateSpiderFromBush(Entity spider)
